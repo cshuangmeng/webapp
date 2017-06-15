@@ -106,6 +106,7 @@ $(function(){
 			$('#js-isbuluobi labal').removeClass('isDefaultHover');
 			config.isbuluobi = 0;
 			_this.val("");
+			config.coinDikou = 0;
 		}
 		if(_this.val()%config.coinRate == 0){
 			var dikouPrice = _this.val()/config.coinRate+$buluofenVal.val()/config.pointRate;
@@ -117,6 +118,7 @@ $(function(){
 				$('#js-isbuluobi labal').removeClass('isDefaultHover');
 				config.isbuluobi = 0;
 				_this.val("");
+				config.coinDikou = 0;
 			}
 		}
 	});
@@ -139,11 +141,11 @@ $(function(){
 		}else{
 			_this.addClass('isDefaultHover');
 			config.isbuluobi = _this.parent().parent().find('input').val();
-			if($buluobiVal.val()){
-				config.coinDikou = $buluobiVal.val()/config.coinRate;
-			}else{
-				config.coinDikou = 0;
+			if(!config.isbuluobi){
+				config.isbuluobi = 0;
 			}
+			config.coinDikou = $buluobiVal.val()/config.coinRate;
+			config.coinDikou = 0;
 			$totleMoney.text(config.totalPrice-config.coinDikou-config.pointDikou);
 		}
 	});
@@ -157,6 +159,7 @@ $(function(){
 			$('#js-isbuluofen labal').removeClass('isDefaultHover');
 			config.isbuluofen = 0;
 			_this.val("");
+			config.pointDikou = 0;
 		}
 		if(_this.val()%config.pointRate == 0){
 			var dikouPrice = _this.val()/config.pointRate+$buluobiVal.val()/config.coinRate;
@@ -169,6 +172,7 @@ $(function(){
 				$('#js-isbuluofen labal').removeClass('isDefaultHover');
 				config.isbuluofen = 0;
 				_this.val("");
+				config.pointDikou = 0;
 			}
 		}
 	});
@@ -191,11 +195,11 @@ $(function(){
 		}else{
 			_this.addClass('isDefaultHover');
 			config.isbuluofen = _this.parent().parent().find('input').val();
-			if($buluofenVal.val()){
-				config.pointDikou = $buluofenVal.val()/config.pointRate;
-			}else{
-				config.pointDikou = 0;
+			if(!config.isbuluofen){
+				config.isbuluofen = 0;
 			}
+			config.pointDikou = $buluofenVal.val()/config.pointRate;
+			config.pointDikou = 0;
 			$totleMoney.text(config.totalPrice-config.coinDikou-config.pointDikou);
 		}
 	});
@@ -217,7 +221,6 @@ $(function(){
 	$pay.click(function(){
 		payConfig.totalPrice = config.totalPrice-config.isbuluobi/config.coinRate-config.isbuluofen/config.pointRate;
 		config.tribeId = $yaoqingmaVal.val();
-		console.log(config.tribeId);
 		if(config.tribeId==""||config.tribeId==undefined||config.tribeId==null){
 			config.tribeId = 0;
 		}
