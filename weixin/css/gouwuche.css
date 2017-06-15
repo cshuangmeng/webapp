@@ -1,0 +1,191 @@
+.p-wodebuluo-main,body{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 50px;
+	background: #f3f4f5;
+}
+.clear{
+	clear: both;
+}
+/*goods*/
+.p-gouwuche-goods{
+	margin-top: 8px;
+}
+.p-gouwuche-goods .shop{
+	margin-bottom: 8px;
+	border-top: 1px solid #E5e5e5;
+	background: #fff;
+}
+.p-gouwuche-goods .shopName{
+	height: 45px;
+	padding: 0 2.5%;
+	border-bottom: 1px solid #ebebf0;
+	background: #fafafa;
+}
+.p-gouwuche-goods .shopName labal{
+	float: left;
+	margin-top: 13px;
+	margin-right: 2.5%;
+}
+.p-gouwuche-goods .shopName span{
+	font-size: 14px;
+	color: #333;
+	line-height: 44px;
+}
+.p-gouwuche-goods .shopGoodsList{
+	padding: 10px 2.5%;
+	background: #fff;
+	border-bottom: 1px solid #ebebf0;
+}
+.p-gouwuche-goods .shopGoods .check{
+	float: left;
+	margin-top: 18px;
+	margin-right: 2.5%;
+}
+.p-gouwuche-goods .shopGoods .goodsImg{
+	float: left;
+	width: 16%;
+	border-radius: 2px;
+	border: 1px solid #dadada;
+}
+.p-gouwuche-goods .shopGoods .goodsImg img{
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.p-gouwuche-goods .shopGoods .goodsCon{
+	float: left;
+	margin-left: 2.5%;
+	width: 70%;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .tit{
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	font-size: 12px;
+	color: #333;
+	line-height: 18px;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .message{
+	color: #999;
+	font-size: 12px;
+	line-height: 22px;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .message span{
+	margin-right: 5px;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .num span{
+	float: left;
+}
+/*数量加减*/
+.p-gouwuche-goods .shopGoods .goodsCon .num .numchange{
+	float: right;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .num span{
+	color: #cc3334;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .num .numchange .reduce{
+	color: #ccc;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .num .numchange button{
+	height: 21px;
+	width: 21px;
+	border: 1px solid #ebebf0;
+	float: left;
+	outline: none;
+	background: none;
+}
+.p-gouwuche-goods .shopGoods .goodsCon .num .numchange input{
+	width: 30px;
+	height: 19px;
+	border: none;
+	outline: none;
+	background: #fff;
+	padding: 0;
+	border-top: 1px solid #ebebf0;
+	border-bottom: 1px solid #ebebf0;
+	float: left;
+	text-align: center;
+}
+.checkboxLabal{
+	display: block;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	background: url(../img/gouwuche/1.png) no-repeat center;
+	background-size: 100%;
+}
+.shopName .checkboxLabalHover,.shopGoods .checkboxLabalHover,.quanxuan .checkboxLabalHover{
+	background: url(../img/gouwuche/2.png) no-repeat center;
+	background-size: 100%;
+}
+.checkboxStyle{
+	display: none;
+}
+/*bot*/
+.p-gouwuche-bot{
+	height: 45px;
+	border-top: 1px solid #EBEBF0;
+	padding-left: 2.5%;
+	background: #fff;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 98%;
+}
+.p-gouwuche-bot .quanxuan{
+	float: left;
+	width: 18%;
+}
+.p-gouwuche-bot .quanxuan span,.p-gouwuche-bot .quanxuan labal{
+	float: left;
+	display: block;
+}
+.p-gouwuche-bot .quanxuan labal{
+	margin-top: 13px;
+	margin-right: 3px;
+}
+.p-gouwuche-bot .quanxuan span{
+	color: #333;
+	font-size: 12px;
+	line-height: 44px;
+}
+.p-gouwuche-bot .heji{
+	float: left;
+	width: 45%;
+	color: #333;
+	font-size: 14px;
+	line-height: 44px;
+}
+.p-gouwuche-bot .qujiesuan{
+	width: 28%;
+	background: #B60220;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 44px;
+	float: right;
+}
+.p-gouwuche-bot .qujiesuan span{
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

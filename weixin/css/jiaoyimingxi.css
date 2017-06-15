@@ -1,0 +1,70 @@
+body{
+	background: #f3f4f5;
+}
+.p-jiaoyimingxi-main{
+	height: 100%;
+	width: 100%;
+	background: #fff;
+}
+.hide{
+	display: none;
+}
+.list{
+	height: 60px;
+	padding: 0 15px;
+	border-bottom: 1px solid #EBEBF0;
+}
+.l{
+	float: left;
+	width: 60%;
+	padding: 9px 0px;
+}
+.l .tit{
+	color: #2F2F2F;
+	font-size: 12px;
+	line-height: 24px;
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.l .time{
+	color: #999;
+	font-size: 10px;
+	line-height: 18px;
+}
+.r{
+	float: right;
+	width: 25%;
+	padding: 9px 0px;
+}
+.r .money{
+	text-align: right;
+	font-size: 14px;
+	line-height: 24px;
+	color: #CC3334;
+}
+.r .desc{
+	text-align: right;
+	color: #999;
+	font-size: 10px;
+	line-height: 18px;
+}
+/*nolist*/
+.p-jiaoyimingxi-noList{
+	width: 100%;
+	margin-top: 54px;
+	background: #f3f4f5;
+}
+.p-jiaoyimingxi-noList img{
+	display: inline-block;
+	width: 20%;
+	margin-left: 41%;
+}
+.p-jiaoyimingxi-noList p{
+	color: #333;
+	font-size: 14px;
+	font-weight: 800;
+	text-align: center;
+	margin-top: 49px;
+}

@@ -1,0 +1,42 @@
+.p-hzspxq-main,body{
+	width: 100%;
+	height: 100%;
+	background: #f3f4f5;
+	padding-bottom: 40px;
+}
+.clear{
+	clear: both;
+}
+/*banner*/
+.p-hzspxq-banner{
+	width: 100%;
+}
+.p-hzspxq-banner img{
+	display: block;
+	width: 100%;
+}
+/*con*/
+.p-hzspxq-con{
+	padding: 15px;
+	background: #fff;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #EBEBF0;
+	border-top: 1px solid #EBEBF0;
+}
+.p-hzspxq-con p{
+	font-size: 12px;
+	line-height: 24px;
+	color: #333;
+}
+/*btn*/
+.p-hzspxq-shop{
+	width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    background: #d83234;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+}

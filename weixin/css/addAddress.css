@@ -1,0 +1,117 @@
+button,input,textarea,div,img{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+.p-addAddress-main,body{
+	width: 100%;
+	height: 100%;
+	background: #f3f4f5;
+	position: relative;
+}
+.clear{
+	clear: both;
+}
+.hide{
+	display: none;
+}
+/*top*/
+.p-addAddress-top,.p-addAddress-bot{
+	background: #fff;
+	width: 100%;
+	margin-top: 20px;
+	border-bottom: 1px solid #EBEBF0;
+}
+.p-addAddress-top p,.p-addAddress-bot p{
+	height: 44px;
+	padding-right: 15px;
+	margin-left: 15px;
+	border-bottom: 1px solid #EBEBF0;
+}
+.p-addAddress-top p span,.p-addAddress-bot p span{
+	color: #333;
+	display: block;
+	float: left;
+    font-size: 14px;
+    margin-right: 15px;
+    line-height: 44px;
+}
+.p-addAddress-top p .comInp,.p-addAddress-bot p .comInp{
+	height: 34px;
+    background: none;
+    color: #999;
+    font-size: 14px;
+    width: 70%;
+    border: none;
+	outline: none;
+}
+/*设为默认收货地址*/
+.p-addAddress-isDefault{
+	height: 44px;
+	line-height: 44px;
+	background: #fff;
+	padding: 0 15px;
+    margin-top: 20px;
+    border-bottom: 1px solid #EBEBF0;
+}
+.p-addAddress-isDefault span{
+	color: #333;
+	display: block;
+	float: left;
+    font-size: 14px;
+    margin-right: 15px;
+    line-height: 44px;
+}
+.p-addAddress-isDefault div.isDefault{
+	float: right;
+	margin-right: 10px;
+}
+.p-addAddress-isDefault .isDefault labal{
+	display: block;
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+	margin-top: 13px;
+	border: none;
+	outline: none;
+	background: url(../img/gouwuche/1.png) no-repeat center;
+	background-size: 100%;
+}
+.p-addAddress-isDefault div.isDefault .isDefaultHover{
+	background: url(../img/gouwuche/2.png) no-repeat center;
+	background-size: 100%;
+}
+.p-addAddress-isDefault .isDefault input{
+	display: none;
+}
+/*save*/
+.p-addAddress-save{
+	width: 90%;
+    height: 40px;
+    margin-left: 5%;
+    background: #d83234;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+}
+/*choseAddress*/
+.p-addAddress-choseAddress{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: #f3f4f5;
+	height: 100%;
+	width: 100%;
+	overflow-y: auto;
+}
+.p-addAddress-choseAddress p{
+	margin: 0px;
+	display: block;
+    font-size: 14px;
+    height: 38px;
+    padding: 0 15px;
+    line-height: 38px;
+    background: #fff;
+    border-bottom: 1px solid #EBEBF0;
+}

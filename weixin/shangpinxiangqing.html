@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shangpinxiangqing.css"/>
+		<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!--<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>-->
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script type="text/javascript" src="js/shangpinxiangqing.js"></script>
+		<title>商品详情</title>
+		<style type="text/css">
+			.item img{
+				display: block;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="p-spxq-main">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）项目 -->
+				<div class="carousel-inner" id="js-banner">
+					<div class="item" style="display: none;">
+						<img src="img/moren.png" alt="">
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="p-spxq-goods">
+				<p class="tit" id="js-goodName"></p>
+				<p class="price">
+					<span class="trueprice">￥<b id="js-price"></b></span>
+					<span class="lowprice">最低实付价: ￥<b id="js-lowPrice">99.00</b></span>
+				</p>
+				<p class="message">
+					<span>
+						快递：<b class="free" id="js-isFree">免运费</b>
+					</span>
+					<span>
+						月消<b id="js-sales">1678</b>笔
+					</span>
+					<span id="js-address">北京海淀区</span>
+					<div class="clear"></div>
+				</p>
+				<div class="num">
+					<div class="title">数量:</div>
+					<div class="numchange">
+						<button class="reduce">-</button>
+						<input type="text" class="changenum js-shuliang" value="1" class="num"/>
+						<button class="increase">+</button>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="p-spxq-buluofen">
+				购买最多可获得<b id="js-buluofen">89</b>个部落分
+			</div>
+			<!--参数-->
+			<div class="p-spxq-canshu">
+				<p class="tit">
+					产品参数
+				</p>
+				<div class="list" id="js-canshu-list">
+					<!--<p class="li">
+						<b>商品名称:</b>
+						<span>连衣裙</span>
+					</p>-->
+				</div>
+			</div>
+			<!--商品展示-->
+			<div class="p-spxq-zhanshi">
+				<p class="tit">
+					商品展示
+				</p>
+				<div class="list" id="js-detailImgs">
+					<!--<img src="img/pic_10.jpg"/>-->
+				</div>
+			</div>
+			<!--bot-->
+			<div class="p-spxq-bot">
+				<div class="dianpu" id="js-goshop">
+					<img src="img/shop.png"/>
+					<p>店铺</p>
+				</div>
+				<div class="addGouwuche" id="js-addGouwuche">加入购物车</div>
+				<div class="pay" id="js-pay">立即购买</div>
+			</div>
+		</div>
+		<div class="tipCon" id="js-tipCon" style="display: none;">
+            <div class="tip" id="js-tip">
+            	<div class="top"></div>
+            	<div class="con"style="text-align: center;">
+            		<p id="js-tipContent"></p>
+            	</div>
+            	<div class="btn" id="js-tipBtn" style="padding: 0;width: 100%;">确认</div>
+            </div>
+        </div>
+        <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</body>
+</html>

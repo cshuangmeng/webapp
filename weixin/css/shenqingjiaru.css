@@ -1,0 +1,79 @@
+body{
+	background: #f3f4f5;
+}
+button,input,textarea,div,img{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+.p-shenqingjiaru-main{
+	height: 100%;
+	width: 100%;
+}
+.hide{
+	display: none;
+}
+/*touxiang*/
+.p-shenqingjiaru-main .touxiang{
+	width: 16%;
+	border-radius: 50%;
+	margin: 22px 0px 22px 42%;
+}
+.p-shenqingjiaru-main .touxiang img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+/*messageList*/
+.p-shenqingjiaru-main .messageList{
+	background: #fff;
+	border-top: 1px solid #EBEBF0;
+	margin-bottom: 30px;
+}
+.p-shenqingjiaru-main .messageList p{
+	height: 44px;
+	padding: 0 15px;
+	border-bottom: 1px solid #EBEBF0;
+}
+.p-shenqingjiaru-main .messageList p span{
+	color: #666;
+	display: block;
+	float: left;
+    font-size: 14px;
+    margin-right: 4px;
+    line-height: 44px;
+}
+.p-shenqingjiaru-main .messageList p .comInp{
+	height: 34px;
+    background: none;
+    color: #2f2f2f;
+    font-size: 14px;
+    width: 70%;
+    border: none;
+	outline: none;
+}
+/*joinBtn*/
+.p-shenqingjiaru-main .joinBtn button{
+	width: 90%;
+	height: 40px;
+	margin-left: 5%;
+	background: #d83234;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	outline: none;
+}
+.p-shenqingjiaru-main .joinBtn p{
+	padding: 0 15px;
+	margin-top: 15px;
+	text-align: center;
+	color: #999;
+	font-size: 14px;
+}
+
+
+
+
+
+
+
+
+

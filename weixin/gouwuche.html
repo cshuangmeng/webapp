@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gouwuche.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script type="text/javascript" src="js/gouwuche.js"></script>
+		<title>购物车</title>
+	</head>
+	<body>
+		<div class="p-gouwuche-main">
+			<div class="p-gouwuche-goods" id="js-p-gouwuche-goods">
+				<!--shop01-->
+				<!--<div class="shop">
+					<div class="shopName">
+						<labal id="shop02" class="checkboxLabal" price="200.00" totleNum="1"></labal>
+						<input for="shop02" class="checkboxStyle" type="checkbox" name="checkShop">
+						<span>only宠物家生活馆  ></span>
+					</div>
+					<div class="shopGoods">
+						<div class="shopGoodsList">
+							<div class="check">
+								<labal id="shop02_01" class="checkboxLabal"  price="200.00" totleNum="1"></labal>
+								<input for="shop02_01" class="checkboxStyle" type="checkbox" name="checkItem">
+							</div>
+							<div class="goodsImg">
+								<img src="img/pic_10.jpg"/>
+							</div>
+							<div class="goodsCon">
+								<p class="tit">百易特 13丝真空压缩袋 大号中号特大 衣物棉被子抽气收纳袋送泵</p>
+								<p class="message">
+									<span>颜色：水洗蓝</span>
+									<span>尺码：L</span>
+								</p>
+								<div class="num">
+									<span>￥<b class="js-danjia">200.00</b></span>
+									<div class="numchange">
+										<button class="reduce" price="200.00">-</button>
+										<input type="text" class="changenum js-shuliang" value="1" class="num"/>
+										<button class="increase" price="200.00">+</button>
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>-->
+			</div>
+			
+			<!--去结算-->
+			<div class="p-gouwuche-bot">
+				<div class="quanxuan">
+					<labal id="allGoogs" class="checkboxLabal" price="600.00" totleNum="3"></labal>
+					<input for="allGoogs" class="checkboxStyle" type="checkbox" name="checkItem">
+					<span>全选</span>
+				</div>
+				<div class="heji">
+					合计：￥<span id="js-total">00.00</span>
+				</div>
+				<div class="qujiesuan" id="js-pay">
+					去结算 <span>(<b class="js-totleNum">0</b>)</span>
+				</div>
+			</div>
+		</div>
+		<div class="tipCon hide" id="js-tipCon">
+            <div class="tip" id="js-tip">
+            	<div class="top"></div>
+            	<div class="con">
+            		<p id="js-tipContent"></p>
+            	</div>
+            	<div class="btn" id="js-tipBtn">确认</div>
+            </div>
+        </div>
+	</body>
+</html>

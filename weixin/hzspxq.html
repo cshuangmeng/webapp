@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/hzspxq.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<title>合作商铺详情</title>
+	</head>
+	<body>
+		<div class="p-hzspxq-main">
+			<div class="p-hzspxq-banner">
+				<img id="js-p-hzspxq-bannerImg" src="img/pic_10.jpg"/>
+			</div>
+			<div class="p-hzspxq-con" id="js-p-hzspxq-con">
+				<p>韩都衣舍电商集团创立于2006年，是中国最大的互联网品牌生态运营集团之一。凭借“款式多，更新快，性价比高”的产品理念，深得全国消费者的喜爱和信赖。2016年7月获批成为互联网服饰品牌第一股，股票代码838711。2010年获“十大网货品牌”...</p>
+			</div>
+			<button class="p-hzspxq-shop" id="js-shop">韩都衣舍</button>
+		</div>
+		<script type="text/javascript">
+			var $bannerImg = $('#js-p-hzspxq-bannerImg'),
+				$con = $('#js-p-hzspxq-con'),
+				$shop = $('#js-shop');
+				
+			var config = {};
+			
+			config.shopId = getUrlParam('shopId');
+			//share
+			share('11','','',config.shopId);
+			//获取url携带的参数
+			config.openid = undefined != configData.openid ? configData.openid : getUrlParam('openid');
+			config.uuid = undefined != configData.uuid ? configData.uuid : getUrlParam('uuid');
+			//合作商户详情
+			$.ajax({
+			    type: "POST",
+			    url: shopinfo,
+			    data:{"id":config.shopId,"uuid":config.uuid,"openId":config.openid},
+			    dataType:"json",
+			    async:false,
+			    success: function(data){
+			    	if(data.code == 0){
+			    		$bannerImg.attr("src",data.data.infoImgs);
+			    		$con.text(data.data.introduction);
+			    		$shop.text(data.data.name);
+			    		$shop.click(function(){
+			    			window.location.href = "/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+data.data.id;
+			    		});
+			    	}
+			    }
+			});
+				
+				
+		</script>
+	</body>
+</html>

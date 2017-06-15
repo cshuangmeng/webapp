@@ -1,0 +1,155 @@
+body{
+	background: #f3f4f6;
+}
+.p-wodezuqun-main{
+	height: 100%;
+	width: 100%;
+}
+.clear{
+	clear: both;
+}
+/*header*/
+.p-wodezuqun-header{
+	background: #cc3334;
+	height: 76px;
+	padding: 10px 0px 10px 15px;
+	margin-bottom: 12px;
+}
+.p-wodezuqun-header .buluobi{
+    border-bottom-left-radius: 18px;
+    border-top-left-radius: 18px;
+	width: 110px;
+	padding-left: 10px;
+	height: 28px;
+	float: right;
+	background: #b60220;
+}
+.p-wodezuqun-header .buluobi img{
+	display: block;
+	float: left;
+	width: 13px;
+	margin-top: 5px;
+	margin-right: 6px;
+}
+.p-wodezuqun-header .buluobi span{
+	display: block;
+	float: left;
+	color: #fff;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 28px;
+}
+.p-wodezuqun-header .touxiang{
+	height: 44px;
+}
+.p-wodezuqun-header .touxiang .img{
+	float: left;
+	height: 43px;
+	width: 43px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+.p-wodezuqun-header .touxiang .img img{
+	display: block;
+	height: 100%;
+	widows: 100%;
+	border-radius: 50%;
+}
+.p-wodezuqun-header .touxiang .message{
+	float: left;
+	height: 43px;
+	margin-left: 15px;
+}
+.p-wodezuqun-header .touxiang .message .tit{
+	color: #fff;
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 20px;
+	margin-top: 5px;
+}
+.p-wodezuqun-header .touxiang .message .changeName{
+	float: left;
+}
+.p-wodezuqun-header .touxiang .message .changeName img{
+	display: block;
+	float: left;
+	width: 12px;
+	margin-right: 4px;
+	margin-top: 2px;
+}
+.p-wodezuqun-header .touxiang .message .changeName span{
+	display: block;
+	float: left;
+	font-size: 11px;
+	color: #ececec;
+	line-height: 18px;
+}
+/*list*/
+.p-wodezuqun-list{
+	background: #fff;
+	width: 100%;
+}
+.p-wodezuqun-list .list{
+	height: 60px;
+	padding: 0 15px;
+	border-bottom: 1px solid #EBEBF0;
+}
+.p-wodezuqun-list .list .touxiang{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-top: 14px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.p-wodezuqun-list .list .touxiang img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.p-wodezuqun-list .list .con .top{
+	height: 22px;
+	padding-top: 10px;
+}
+.p-wodezuqun-list .list .con .name{
+	float: left;
+	font-size: 14px;
+	color: #2F2F2F;
+	line-height: 22px;
+}
+.p-wodezuqun-list .list .con .time{
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
+.p-wodezuqun-list .list .con .id{
+	height: 22px;
+	font-size: 12px;
+	color: #999;
+	line-height: 12px;
+}
+/*changeName*/
+.p-wodezuqun-changeName{
+	height: 32px;
+	margin-bottom: 8px;
+	background: #fff;
+	padding: 5px 15px;
+}
+.p-wodezuqun-changeName input{
+	height: 30px;
+	padding: 0 15px;
+	background: #fff;
+	border: 1px solid #EBEBF0;
+	border-radius: 3px;
+	float: left;
+}
+.p-wodezuqun-changeName button{
+	height: 30px;
+	padding: 0px 8px;
+	background: #B60220;
+	color: #fff;
+	border-radius: 3px;
+	float: right;
+	border: none;
+	outline: none;
+}

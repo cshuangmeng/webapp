@@ -1,0 +1,211 @@
+.p-spxq-main,body{
+	width: 100%;
+	height: 100%;
+	background: #f3f4f5;
+	padding-bottom: 50px;
+}
+.clear{
+	clear: both;
+}
+.hide{
+	display: none;
+}
+/*banner*/
+.p-spxq-banner{
+	width: 100%;
+}
+.p-spxq-banner img{
+	display: block;
+	width: 100%;
+}
+/*goods*/
+.p-spxq-goods{
+	background: #fff;
+	padding: 15px 15px 10px;
+}
+.p-spxq-goods .tit{
+	font-size: 12px;
+	line-height: 16px;
+	color: #333;
+}
+.p-spxq-goods .price span{
+	margin-right: 15px;
+	margin-top: 8px;
+	font-size: 12px;
+	line-height: 24px;
+}
+.p-spxq-goods .price span.trueprice{
+	color: #B60220;
+}
+.p-spxq-goods .price span.lowprice{
+	color: #FF7700;
+}
+.p-spxq-goods .message span{
+	display: block;
+	float: left;
+	margin-right: 15px;
+	font-size: 12px;
+	line-height: 24px;
+	color: #666;
+	margin-bottom: 8px;
+}
+.p-spxq-goods .message span .free{
+	color: #FF7700;
+}
+/*num*/
+.p-spxq-goods .num div{
+	float: left;
+	margin-right: 15px;
+}
+.p-spxq-goods .num div.title{
+	line-height: 20px;
+	font-size: 14px;
+}
+.p-spxq-goods .num span{
+	color: #cc3334;
+}
+.p-spxq-goods .num .numchange .reduce{
+	color: #ccc;
+}
+.p-spxq-goods .num .numchange button{
+	height: 21px;
+	width: 21px;
+	border: 1px solid #ebebf0;
+	float: left;
+	outline: none;
+	background: none;
+}
+.p-spxq-goods .num .numchange input{
+	width: 30px;
+	height: 19px;
+	border: none;
+	outline: none;
+	background: #fff;
+	padding: 0;
+	border-top: 1px solid #ebebf0;
+	border-bottom: 1px solid #ebebf0;
+	float: left;
+	text-align: center;
+}
+/*buluofen*/
+.p-spxq-buluofen{
+	height: 36px;
+	padding: 0 15px;
+	line-height: 36px;
+	color: #999;
+	font-size: 12px;
+	background: #fafafa;
+	border-bottom: 1px solid #EBEBF0;
+	margin-bottom: 8px;
+}
+.p-spxq-buluofen b{
+	color: #B60220;
+}
+/*参数*/
+.p-spxq-canshu{
+	padding: 10px 15px;
+	background: #fff;
+	border-bottom: 1px solid #EBEBF0;
+	margin-bottom: 8px;
+}
+.p-spxq-canshu .tit{
+	font-size: 12px;
+	color: #333;
+	line-height: 24px;
+}
+.p-spxq-canshu .list{
+	width: 100%;
+}
+.p-spxq-canshu .list .li{
+	font-size: 12px;
+	color: #666;
+	height: 24px;
+	line-height: 24px;
+}
+.p-spxq-canshu .list .li b,.p-spxq-canshu .list .li span{
+	display: block;
+	float: left;
+}
+.p-spxq-canshu .list .li b{
+	width: 30%;
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.p-spxq-canshu .list .li span{
+	width: 60%;
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+/*展示*/
+.p-spxq-zhanshi{
+	padding: 10px 15px 20px;
+	background: #fff;
+	border-bottom: 1px solid #EBEBF0;
+}
+.p-spxq-zhanshi .tit{
+	font-size: 12px;
+	color: #333;
+	line-height: 24px;
+	margin-bottom: 10px;
+}
+.p-spxq-zhanshi .list{
+	width: 100%;
+}
+.p-spxq-zhanshi .list img{
+	display: block;
+	width: 100%;
+}
+/*bot*/
+.p-spxq-bot{
+	width: 100%;
+	height: 45px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	background: #fff;
+}
+.p-spxq-bot div{
+	float: left;
+}
+.p-spxq-bot .dianpu{
+	width: 20%;
+	height: 44px;
+	border-top: 1px solid #EBEBF0;
+}
+.p-spxq-bot .dianpu img{
+	display: block;
+	margin-left: 40%;
+	margin-top: 8px;
+	text-align: center;
+	width: 16px;
+}
+.p-spxq-bot .dianpu p{
+	text-align: center;
+	width: 100%;
+	color: #666;
+	font-weight: 800;
+	font-size: 10px;
+	line-height: 18px;
+}
+.p-spxq-bot .addGouwuche{
+	width: 40%;
+	height: 45px;
+	background: #FF7700;
+	font-size: 14px;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+}
+.p-spxq-bot .pay{
+	width: 40%;
+	height: 45px;
+	background: #B60220;
+	font-size: 14px;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+}

@@ -1,0 +1,14 @@
+.DS_Store
+.project
+/bin/
+/WebContent/
+/.settings/
+/.SVN/
+.classpath
+.MF
+
+pet/.idea/
+pet/.settings/
+pet/WebContent/
+pet/pet.iml
+pet/build/

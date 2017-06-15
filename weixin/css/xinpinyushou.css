@@ -1,0 +1,93 @@
+.p-xpys-main,body{
+	width: 100%;
+	height: 100%;
+	background: #f3f4f5;
+}
+.clear{
+	clear: both;
+}
+/*banner*/
+.p-xpys-banner{
+	width: 100%;
+}
+.p-xpys-banner img{
+	display: block;
+	width: 100%;
+}
+/*con*/
+.p-xpys-con{
+	padding: 15px;
+	background: #fff;
+	margin-bottom: 8px;
+	border-bottom: 1px solid #EBEBF0;
+}
+.p-xpys-con p{
+	font-size: 12px;
+	line-height: 24px;
+	color: #333;
+}
+/*goods*/
+.p-xpys-list{
+	background: #fff;
+}
+.p-xpys-list .tit{
+	padding: 0 15px;
+	line-height: 32px;
+	height: 32px;
+	border-bottom: 1px solid #EBEBF0;
+	margin-bottom: 10px;
+}
+.p-xpys-goods{
+	width: 100%;
+}
+.p-xpys-goods .good{
+	width: 49%;
+	padding-bottom: 10px;
+	background: #fff;
+	margin-bottom: 8px;
+}
+.p-xpys-goods .good img{
+	width: 100%;
+	display: block;
+}
+.p-xpys-goods .good .tit{
+	padding: 0px 10px;
+	font-size: 12px;
+	color: #333;
+	line-height: 24px;
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.p-xpys-goods .good .con{
+	padding: 0px 10px;
+}
+.p-xpys-goods .good .price{
+	float: left;
+	font-size: 14px;
+	color: #B60220;
+	line-height: 24px;
+}
+.p-xpys-goods .good .tag{
+	float: right;
+	color: #fefefe;
+	background: #FF7700;
+	display: block;
+	font-size: 10px;
+	height: 18px;
+	line-height: 18px;
+	padding: 1px 4px;
+	margin-top: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+

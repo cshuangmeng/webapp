@@ -1,0 +1,69 @@
+.p-hydlb-main,body{
+	width: 100%;
+	height: 100%;
+	background: #f3f4f5;
+}
+.clear{
+	clear: both;
+}
+/*search*/
+.p-hydlb-search{
+	padding: 8px 15px;
+}
+.p-hydlb-search input{
+	height: 28px;
+	width: 90%;
+	padding-left: 10%;
+	background: url(../img/search.png) no-repeat 10px center #fff;
+	background-size: 14px 14px;
+	border-radius: 4px;
+	border: 1px solid #EBEBF0;
+	font-size: 12px;
+	color: #999;
+}
+/*goodsList*/
+.p-hydlb-goodsList{
+	width: 100%;
+}
+.p-hydlb-goodsList .good{
+	width: 49%;
+	padding-bottom: 10px;
+	background: #fff;
+	margin-bottom: 8px;
+}
+.p-hydlb-goodsList .good img{
+	width: 100%;
+	display: block;
+}
+.p-hydlb-goodsList .good .tit{
+	padding: 0px 10px;
+	font-size: 12px;
+	color: #333;
+	line-height: 24px;
+	display:block;
+	white-space:nowrap; 
+	overflow:hidden; 
+	text-overflow:ellipsis;
+}
+.p-hydlb-goodsList .good .con{
+	padding: 0px 10px;
+}
+.p-hydlb-goodsList .good .price{
+	float: left;
+	font-size: 14px;
+	color: #B60220;
+	line-height: 24px;
+}
+.p-hydlb-goodsList .good .tag{
+	float: right;
+	color: #fefefe;
+	background: #FF7700;
+	display: block;
+	font-size: 10px;
+	height: 18px;
+	line-height: 18px;
+	padding: 1px 4px;
+	margin-top: 2px;
+}
+
+

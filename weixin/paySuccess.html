@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<title>支付状态</title>
+		<style type="text/css">
+			.p-paySuccess-main{
+				height: 100%;
+				width: 100%;
+			}
+			.p-paySuccess-main img{
+				display: block;
+				margin-top: 70px;
+				width: 20%;
+				margin-left: 40%;
+				margin-bottom: 16px;
+			}
+			.p-paySuccess-main .paySuccess{
+				font-size: 16px;
+				text-align: center;
+				color: #333;
+				line-height: 26px;
+			}
+			.p-paySuccess-main .tit{
+				font-size: 12px;
+				text-align: center;
+				color: #333;
+				line-height: 18px;
+			}
+			/*Btn*/
+			.p-paySuccess-btn{
+				width: 90%;
+			    height: 40px;
+			    margin-left: 5%;
+			    background: #d83234;
+			    color: #fff;
+			    font-size: 16px;
+			    margin-top: 40px;
+			    border: none;
+			    outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="p-paySuccess-main">
+			<img src="img/paySuccess.png"/>
+			<div class="success hide">
+				<p class="paySuccess">付款成功</p>
+				<p class="tit">您的包裹正在整装待发</p>
+			</div>
+			<div class="wait hide">
+				<p class="paySuccess">待付款</p>
+				<p class="tit">您的包裹正在待您取走</p>
+			</div>
+			<button class="p-paySuccess-btn" id="js-paySuccess-btn">查看订单</button>
+		</div>
+		<script type="text/javascript">
+			var config = {};
+			//获取url携带的参数
+			config.openid = undefined != configData.openid ? configData.openid : getUrlParam('openid');
+			config.uuid = undefined != configData.uuid ? configData.uuid : getUrlParam('uuid');
+			config.state = getUrlParam('state');
+			//share
+			share('14','','','');
+			if(config.state==1){
+				$('.success').show();
+				$('.wait').hide();
+				$('#js-paySuccess-btn').click(function(){
+					window.location.href="/weixin/daifahuo.html?openid="+config.openid+"&uuid="+config.uuid;
+				});
+			}
+			if(config.state==0){
+				$('.wait').show();
+				$('.success').hide();
+				$('#js-paySuccess-btn').click(function(){
+					window.location.href="/weixin/daifukuan.html?openid="+config.openid+"&uuid="+config.uuid;
+				});
+			}
+			
+		</script>
+	</body>
+</html>
