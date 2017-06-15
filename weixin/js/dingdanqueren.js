@@ -224,7 +224,13 @@ $(function(){
 					$.ajax({
 					    type: "POST",
 					    url: ordernew,
-					    data:{"uuid":config.uuid,"itemIds":config.itemIds,"price":payConfig.totalPrice,"addressId":config.areaId,"coin":config.isbuluobi,"point":config.isbuluofen,"tribeId":config.tribeId},
+					    data:{"uuid":config.uuid
+					    		 ,"itemIds":config.itemIds
+					    		 ,"price":payConfig.totalPrice
+					    		 ,"addressId":config.areaId
+					    		 ,"coin":config.isbuluobi
+					    		 ,"point":config.isbuluofen
+					    		 ,"tribeId":config.tribeId},
 					    dataType:"json",
 					    async:false,
 					    success: function(data){
