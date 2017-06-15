@@ -139,7 +139,11 @@ $(function(){
 		}else{
 			_this.addClass('isDefaultHover');
 			config.isbuluobi = _this.parent().parent().find('input').val();
-			config.coinDikou = $buluobiVal.val()/config.coinRate;
+			if($buluobiVal.val()){
+				config.coinDikou = $buluobiVal.val()/config.coinRate;
+			}else{
+				config.coinDikou = 0;
+			}
 			$totleMoney.text(config.totalPrice-config.coinDikou-config.pointDikou);
 		}
 	});
@@ -187,7 +191,11 @@ $(function(){
 		}else{
 			_this.addClass('isDefaultHover');
 			config.isbuluofen = _this.parent().parent().find('input').val();
-			config.pointDikou = $buluofenVal.val()/config.pointRate;
+			if($buluofenVal.val()){
+				config.pointDikou = $buluofenVal.val()/config.pointRate;
+			}else{
+				config.pointDikou = 0;
+			}
 			$totleMoney.text(config.totalPrice-config.coinDikou-config.pointDikou);
 		}
 	});
