@@ -20,7 +20,7 @@ $(function(){
 				//去商品详情
 				$('.js-good').click(function(){
 					config.goodId = $(this).attr('goodId');
-					window.location.href="/weixin/shangpinxiangqing.html?openid="+configData.openid+"&uuid="+configData.uuid+"&goodId="+config.goodId+"&isInviteCode=1";
+					window.location.href="/weixin/hydlbSpxq.html?openid="+configData.openid+"&uuid="+configData.uuid+"&goodId="+config.goodId+"&isInviteCode=1";
 				});
 			}
 		}
@@ -44,7 +44,7 @@ $(function(){
 						//去商品详情
 						$('.js-good').click(function(){
 							config.goodId = $(this).attr('goodId');
-							window.location.href="/weixin/shangpinxiangqing.html?openid="+configData.openid+"&uuid="+configData.uuid+"&goodId="+config.goodId;
+							window.location.href="/weixin/hydlbSpxq.html?openid="+configData.openid+"&uuid="+configData.uuid+"&goodId="+config.goodId+"&isInviteCode=1";
 						});
 					}
 				}

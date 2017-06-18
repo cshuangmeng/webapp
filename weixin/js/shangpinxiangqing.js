@@ -36,27 +36,35 @@ $(function(){
 			if(data.code == 0){
 				config.goodId = data.data.id;
 				$goshop.attr("shopId",data.data.shopId);
-				var infoImgsArr = new Array();  
-				var infoImgsList = data.data.infoImgs;
-				infoImgsArr = infoImgsList.split(',');
-				for(var i=0;i<infoImgsArr.length;i++){
-					$banner.append('<div class="item"><img src="'+infoImgsArr[i]+'" alt=""></div>');
+				if(data.data.infoImgs){
+					var infoImgsArr = new Array();  
+					var infoImgsList = data.data.infoImgs;
+					infoImgsArr = infoImgsList.split(',');
+					for(var i=0;i<infoImgsArr.length;i++){
+						$banner.append('<div class="item"><img src="'+infoImgsArr[i]+'" alt=""></div>');
+					}
+					$('.item:eq(1)').addClass('active');
+					$('.item:eq(0)').remove();
+					$('.carousel').carousel();
 				}
-				$('.item:eq(1)').addClass('active');
-				$('.item:eq(0)').remove();
-				$('.carousel').carousel();
+				
+				if(data.data.details){
+					var detailsArr = eval(data.data.details);
+					for(var i=0;i<detailsArr.length;i++){
+						$canshulist.append('<p class="li"><b>'+detailsArr[i].label+':</b><span>'+detailsArr[i].value+'</span></p>');
+					}
+				}
+				if(data.data.detailImgs){
+					var detailImgsArr = new Array();  
+					var detailImgsList = data.data.detailImgs;
+					detailImgsArr = detailImgsList.split(',');
+					for(var i=0;i<detailImgsArr.length;i++){
+						$detailImgs.append('<img src="'+detailImgsArr[i]+'"/>');
+					}
+				}
+				
 				$goodName.text(data.data.name);
 				$price.text(data.data.price);
-				var detailsArr = eval(data.data.details);
-				for(var i=0;i<detailsArr.length;i++){
-					$canshulist.append('<p class="li"><b>'+detailsArr[i].label+':</b><span>'+detailsArr[i].value+'</span></p>');
-				}
-				var detailImgsArr = new Array();  
-				var detailImgsList = data.data.detailImgs;
-				detailImgsArr = detailImgsList.split(',');
-				for(var i=0;i<detailImgsArr.length;i++){
-					$detailImgs.append('<img src="'+detailImgsArr[i]+'"/>');
-				}
 				//extras
 				$lowPrice.text(data.data.extras.miniPrice);
 				$isFree.text(data.data.extras.freight);
