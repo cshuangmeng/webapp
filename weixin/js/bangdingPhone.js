@@ -109,7 +109,8 @@ $(function(){
 								}
 								if(config.loginReturn == 3){
 									config.goodId = getUrlParam('goodId');
-									window.location.href="/weixin/shangpinxiangqing.html?openid="+config.openid+"&uuid="+config.uuid+"&goodId="+config.goodId;
+									config.isInviteCode = getUrlParam('isInviteCode');
+									window.location.href="/weixin/shangpinxiangqing.html?openid="+config.openid+"&uuid="+config.uuid+"&goodId="+config.goodId+"&isInviteCode="+config.isInviteCode;
 								}
 								if(config.loginReturn == 4){
 									config.shopId = getUrlParam('shopId');

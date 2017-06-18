@@ -219,7 +219,15 @@ $(function(){
 	//支付(ordernew)uuid=6d4722642c554a4aa75e417fafea6c76&itemIds=4&price=83&addressId=4&coin=10&point=0
 	var payConfig={};
 	$pay.click(function(){
-		payConfig.totalPrice = config.totalPrice-config.isbuluobi/config.coinRate-config.isbuluofen/config.pointRate;
+		if(config.coinRate != 0 && config.pointRate != 0){
+			payConfig.totalPrice = config.totalPrice-config.isbuluobi/config.coinRate-config.isbuluofen/config.pointRate;
+		}else if(config.coinRate != 0 && config.pointRate == 0){
+			payConfig.totalPrice = config.totalPrice-config.isbuluobi/config.coinRate;
+		}else if(config.coinRate == 0 && config.pointRate != 0){
+			payConfig.totalPrice = config.totalPrice-config.isbuluofen/config.pointRate;
+		}else{
+			payConfig.totalPrice = config.totalPrice;
+		}
 		config.tribeId = $yaoqingmaVal.val();
 		if(config.tribeId==""||config.tribeId==undefined||config.tribeId==null){
 			config.tribeId = 0;
