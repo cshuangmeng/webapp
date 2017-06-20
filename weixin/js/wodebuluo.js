@@ -8,10 +8,12 @@ $(function(){
 		$headImg = $('#js-headImg'),
 		$coin = $('#js-coin'),
 		$point = $('#js-point'),
+		$tipContent = $('#js-tipContent'),
 		$ID = $('#js-ID');
 	//share
 	share('23',configData.uuid,'','');
-	
+	//关闭弹框
+	hideTip();
 	$.ajax({
 	    type: "POST",
 	    url: login,
@@ -39,7 +41,23 @@ $(function(){
 	});
 	//我的族群
 	$goZuqun.click(function(){
-		window.location.href="/weixin/wodezuqun.html?openid="+configData.openid+"&uuid="+configData.uuid;
+		$.ajax({
+			type: "POST",
+		    url: tribeinfo,
+		    dataType:"json",
+		    data:{"uuid":configData.uuid},
+		    async:false,
+			success:function(data){
+				if(data.code == 0){
+					if(data.data){
+						window.location.href="/weixin/wodezuqun.html?openid="+configData.openid+"&uuid="+configData.uuid;
+					}else{
+						$tipContent.text('购买欢迎大礼包，才能创建族群哦~');
+						showTip();
+					}
+				}
+			}
+		});
 	});
 	//daifukuan
 	$daifukuan.click(function(){
