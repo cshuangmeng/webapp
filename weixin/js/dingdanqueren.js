@@ -113,7 +113,8 @@ $(function(){
 			config.shifuPrice = config.totalPrice-dikouPrice;
 			$biDikou.text(_this.val()/config.coinRate);
 			if(config.shifuPrice < config.totalMiniPrice){
-				$tipContent.text('超过最高抵扣金额，最高抵扣金额为¥'+config.MaximumPrice+'！');
+				config.MaximumCoin = config.MaximumPrice*2;
+				$tipContent.text('最高抵扣金额为'+config.MaximumPrice+'元，最大可用部落币'+config.MaximumCoin);
 				showTip();
 				$('#js-isbuluobi labal').removeClass('isDefaultHover');
 				config.isbuluobi = 0;
@@ -167,7 +168,8 @@ $(function(){
 			
 			$fenDikou.text(_this.val()/config.pointRate);
 			if(config.shifuPrice < config.totalMiniPrice){
-				$tipContent.text('超过最高抵扣金额，最高抵扣金额为¥'+config.MaximumPrice+'！');
+				config.MaximumPoint = config.MaximumPrice*3;
+				$tipContent.text('最高抵扣额为'+config.MaximumPrice+'元，最大可用部落分'+config.MaximumPoint);
 				showTip();
 				$('#js-isbuluofen labal').removeClass('isDefaultHover');
 				config.isbuluofen = 0;

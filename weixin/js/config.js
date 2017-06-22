@@ -69,3 +69,5 @@ var wxshare = addresses+"wx/share";
 //uuid：用户UUID，action=23时必填
 //goodsId：商品ID，action=20时必填
 //shopId：店铺ID，action=7或action=11时必填
+//删除订单(orderId=1&uuid=ghjklghjkl)
+var orderdelete = addresses+"shop/order/delete";

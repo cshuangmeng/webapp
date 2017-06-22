@@ -28,7 +28,7 @@ $(function(){
 			type: "POST",
 		    url: triberename,
 		    dataType:"json",
-		    data:{"uuid":config.uuid,"newName":config.newName},
+		    data:{"uuid":config.uuid,"name":config.newName},
 		    async:false,
 			success:function(data){
 				if(data.code == 0){

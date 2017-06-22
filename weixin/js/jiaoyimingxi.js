@@ -23,7 +23,7 @@ $(function(){
 	    		$jiaoyimingxilist.show();
 	    		$jiaoyimingxinoList.hide();
 	    		for(var i=0;i<data.data.logs.length;i++){
-					$jiaoyimingxilist.append('<div class="list"><div class="l"><p class="tit">'+data.data.logs[i].item+'</p><p class="time">'+data.data.logs[i].createTime+'</p></div><div class="r"><p class="money"><b class="isPlus'+i+'">+</b>'+data.data.logs[i].amount+'</p><p class="desc">'+data.data.logs[i].desc+'</p></div></div>');
+					$jiaoyimingxilist.append('<div class="list"><div class="l"><p class="tit">'+data.data.logs[i].item+'</p><p class="time">'+data.data.logs[i].createTime+'</p></div><div class="r"><p class="money"><b class="isPlus'+i+'"></b>'+data.data.logs[i].amount+'</p><p class="desc">'+data.data.logs[i].desc+'</p></div></div>');
 					if(data.data.logs[i].amount < 0){
 						$('.isPlus'+i).hide();
 						$('.isPlus'+i).parent().css("color","#333");
