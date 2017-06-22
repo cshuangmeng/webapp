@@ -15,20 +15,27 @@ $(function(){
 		success:function(data){
 			if(data.code == 0){
 //				recommend
-				$banner.attr("src",data.data.recommend.imgs);
-				$intro.text(data.data.recommend.desc);
+//				$banner.attr("src",data.data.recommend.imgs);
+//				$intro.text(data.data.recommend.desc);
 //				goods
-				if(data.data.goods){
-					for(var i=0;i<data.data.goods.length;i++){
-						$goodsList.append('<div class="good js-good" goodId="'+data.data.goods[i].id+'"><img src="'+data.data.goods[i].headImg+'" alt="" /><p class="tit">'+data.data.goods[i].name+'</p><div class="con"><span class="price">￥'+data.data.goods[i].price+'</span><span class="tag">马上抢</span></div><div class="clear"></div></div>');
-					}
+//				if(data.data.goods){
+//					for(var i=0;i<data.data.goods.length;i++){
+//						$goodsList.append('<div class="good js-good" goodId="'+data.data.goods[i].id+'"><img src="'+data.data.goods[i].headImg+'" alt="" /><p class="tit">'+data.data.goods[i].name+'</p><div class="con"><span class="price">￥'+data.data.goods[i].price+'</span><span class="tag">马上抢</span></div><div class="clear"></div></div>');
+//					}
+//				}
+//				position();
+//				//去商品详情
+//				$('.js-good').click(function(){
+//					config.goodId = $(this).attr('goodId');
+//					window.location.href="/weixin/shangpinxiangqing.html?openid="+configData.openid+"&uuid="+configData.uuid+"&goodId="+config.goodId;
+//				});
+				var detailImgsArr = new Array();  
+				var detailImgsList = data.data.recommend.imgs;
+				detailImgsArr = detailImgsList.split(',');
+				for(var i=0;i<detailImgsArr.length;i++){
+					$('.imgList').append('<img src="'+detailImgsArr[i]+'"/>');
 				}
-				position();
-				//去商品详情
-				$('.js-good').click(function(){
-					config.goodId = $(this).attr('goodId');
-					window.location.href="/weixin/shangpinxiangqing.html?openid="+configData.openid+"&uuid="+configData.uuid+"&goodId="+config.goodId;
-				});
+				
 			}
 		}
 	});

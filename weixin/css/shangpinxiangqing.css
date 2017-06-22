@@ -77,15 +77,16 @@
 }
 .p-spxq-goods .num .numchange input{
 	width: 30px;
-	height: 19px;
-	border: none;
-	outline: none;
-	background: #fff;
-	padding: 0;
-	border-top: 1px solid #ebebf0;
-	border-bottom: 1px solid #ebebf0;
-	float: left;
-	text-align: center;
+    height: 21px;
+    border: none;
+    outline: none;
+    background: #fff;
+    padding: 0;
+    border-top: 1px solid #ebebf0;
+    border-bottom: 1px solid #ebebf0;
+    float: left;
+    text-align: center;
+    border-radius: 0px;
 }
 /*buluofen*/
 .p-spxq-buluofen{
