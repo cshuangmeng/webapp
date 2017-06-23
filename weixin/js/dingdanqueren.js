@@ -146,7 +146,6 @@ $(function(){
 				config.isbuluobi = 0;
 			}
 			config.coinDikou = $buluobiVal.val()/config.coinRate;
-			config.coinDikou = 0;
 			$totleMoney.text(config.totalPrice-config.coinDikou-config.pointDikou);
 		}
 	});
@@ -201,7 +200,6 @@ $(function(){
 				config.isbuluofen = 0;
 			}
 			config.pointDikou = $buluofenVal.val()/config.pointRate;
-			config.pointDikou = 0;
 			$totleMoney.text(config.totalPrice-config.coinDikou-config.pointDikou);
 		}
 	});

@@ -71,7 +71,11 @@ function Login(){
 	    		configData.coin = data.data.coin;
 	    		configData.point = data.data.point;
 	    		configData.nickname = data.data.nickname;
-	    		configData.ID = data.data.id;
+	    		if(data.data.extras.tribeCode){
+	    			configData.ID = data.data.extras.tribeCode;
+	    		}else{
+	    			configData.ID = '马上获取';
+	    		}
 	    		configData.tribeCode = data.data.extras.tribeCode;
 	    	}
 	    }

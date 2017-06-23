@@ -28,6 +28,11 @@ $(function(){
 				$coin.text(configData.coin);
 				$point.text(configData.point);
 				$ID.text(configData.ID);
+				if($ID.text() == "马上获取"){
+					$ID.click(function(){
+						window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1be0f2a1f512729a&redirect_uri=http%3A%2F%2Fwww.tangseng.shop%2Fweixin%2Fhydlb.html&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect";
+					});
+				}
 	    	}else if(data.code == 104){
 	    		window.location.href = "/weixin/bangdingPhone.html?openid="+configData.openid+"&loginReturn=0";
 	    	}
