@@ -192,9 +192,6 @@ $(function(){
 			        	}          
 			        }
 			    });
-				
-				
-				
     		}
 		});
     }
@@ -205,6 +202,7 @@ $(function(){
 		$('.increase').click(function(){
 			var _this = $(this);
 			if(_this.attr('buyAmount') <= 1){
+				_this.css('color','#ccc');
 				return;
 			}else{
 				_this.prev().prev().css('color','#333');
