@@ -38,7 +38,7 @@ $(function(){
 				for(var i=0;i<data.data.length;i++){
 					$shoplist.append('<div class="shop js-shop"><div class="shopName"><labal id="shop'+i+'" class="checkboxLabal" price="" totleNum=""></labal><input for="shop'+i+'" class="checkboxStyle" type="checkbox" name="checkShop"><span>'+data.data[i].shopName+'</span></div><div class="shopGoods js-shopGoods'+i+'"></div></div>');
 					for(var j=0;j<data.data[i].goods.length;j++){
-						$('.js-shopGoods'+i+'').append('<div class="shopGoodsList"><div class="check"><labal id="shop00_'+j+'" goodsId="'+data.data[i].goods[j].goodsId+'" itemId="'+data.data[i].goods[j].itemId+'" goodsId="'+data.data[i].goods[j].goodsId+'" class="checkboxLabal js-goodsLabal" price="'+data.data[i].goods[j].price+'" totleNum="1"></labal><input for="shop00_'+j+'" class="checkboxStyle" type="checkbox" name="checkItem"></div><div class="goodsImg"><img src="'+data.data[i].goods[j].headImg+'"/></div><div class="goodsCon"><p class="tit">'+data.data[i].goods[j].goodsName+'</p><div class="num"><span>￥'+data.data[i].goods[j].price+'</span><div class="numchange"><button  goodsId="'+data.data[i].goods[j].goodsId+'" class="reduce" price="'+data.data[i].goods[j].price+'">-</button><input type="text" class="changenum js-shuliang" value="1" class="num"/><button class="increase" price="'+data.data[i].goods[j].price+'">+</button></div></div></div><div class="clear"></div></div>');
+						$('.js-shopGoods'+i+'').append('<div class="shopGoodsList"><div class="check"><labal id="shop00_'+j+'" goodsId="'+data.data[i].goods[j].goodsId+'" itemId="'+data.data[i].goods[j].itemId+'" goodsId="'+data.data[i].goods[j].goodsId+'" class="checkboxLabal js-goodsLabal" price="'+data.data[i].goods[j].price+'" totleNum="1"></labal><input for="shop00_'+j+'" class="checkboxStyle" type="checkbox" name="checkItem"></div><div class="goodsImg"><img src="'+data.data[i].goods[j].headImg+'"/></div><div class="goodsCon"><p class="tit">'+data.data[i].goods[j].goodsName+'</p><div class="num"><span>￥'+data.data[i].goods[j].price+'</span><div class="numchange"><button  goodsId="'+data.data[i].goods[j].goodsId+'" class="reduce" price="'+data.data[i].goods[j].price+'">-</button><input type="text" class="changenum js-shuliang" value="1" class="num"/><button class="increase" price="'+data.data[i].goods[j].price+'" buyAmount="'+data.data[i].goods[j].buyAmount+'">+</button></div></div></div><div class="clear"></div></div>');
 						config.shopPrice = 0;
 						config.shopNum = 0;
 						$('.js-shopGoods'+i+' labal').each(function(){
@@ -204,20 +204,25 @@ $(function(){
 	function increase(){
 		$('.increase').click(function(){
 			var _this = $(this);
-			_this.prev().prev().css('color','#333');
-			var val = _this.prev().val();
-			val++;
-			_this.prev().val(val);
-			config.goodNum += 1;
-			_this.parent().parent().parent().parent().find('labal').attr("totleNum",config.goodNum);
-			_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("totleNum",parseInt(_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("totleNum"))+1);
-			_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("price",parseInt(_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("price"))+parseInt(_this.attr('price')));
-			if(_this.parent().parent().parent().parent().find('labal').hasClass('checkboxLabalHover')){
-				config.price += parseInt(_this.attr('price'));
-				$total.text(config.price);
-				config.totleNum += 1;
-				$totleNum.text(config.totleNum);
+			if(_this.attr('buyAmount') <= 1){
+				return;
+			}else{
+				_this.prev().prev().css('color','#333');
+				var val = _this.prev().val();
+				val++;
+				_this.prev().val(val);
+				config.goodNum += 1;
+				_this.parent().parent().parent().parent().find('labal').attr("totleNum",config.goodNum);
+				_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("totleNum",parseInt(_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("totleNum"))+1);
+				_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("price",parseInt(_this.parent().parent().parent().parent().parent().siblings().find('labal').attr("price"))+parseInt(_this.attr('price')));
+				if(_this.parent().parent().parent().parent().find('labal').hasClass('checkboxLabalHover')){
+					config.price += parseInt(_this.attr('price'));
+					$total.text(config.price);
+					config.totleNum += 1;
+					$totleNum.text(config.totleNum);
+				}
 			}
+			
 		});
 	}
 	
