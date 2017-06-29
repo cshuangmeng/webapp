@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/config.css"/>
+		<link rel="stylesheet" href="css/login.css" />
+		<link rel="import" href="common.html">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<!--<script type="text/javascript"></script>-->
+		<title>登录</title>
+	</head>
+	<body>
+		<div class="p-login-main">
+			<!--top-->
+			<div class="commonTop"></div>
+			<div class="p-login">
+				<div class="loginImg">
+					<img src="img/FX.jpg"/>
+				</div>
+				<div class="loginCon">
+					<p class="p01">如有帐号，请登录</p>
+					<p>
+						<input type="text" placeholder="手机号/用户名/邮箱" />
+					</p>
+					<p>
+						<input type="password" placeholder="密码" />
+					</p>
+					<p>
+						<button>登录</button>
+					</p>
+					<p>
+						<span class="remberUserName"><b></b>记住用户名</span>
+						<span class="forgetReg"><b class="forget">忘记密码？</b> | <b class="register">免费注册</b></span>
+					</p>
+					<p class="cooperate">合作网站账号登录</p>
+					<p><img class="loginWx" src="img/loginWx.png"/></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<!--footer-->
+			<div class="commonBot"></div>
+		</div>
+		<script type="text/javascript">
+	  	    var link = document.querySelector('link[rel="import"]');
+		    var content = link.import;
+		    // 从 warning.html 的文档中获取 DOM。
+		    var el = content.querySelector('.TOP');
+		    var el1 = content.querySelector('.BOT');
+		    $('.commonTop').append(el.cloneNode(true));
+		    $('.commonBot').append(el1.cloneNode(true));
+	  	</script>
+	</body>
+</html>
