@@ -101,6 +101,14 @@
 	line-height: 38px;
 	text-align: center;
 }
+.navigationCon .list div.js-more span{
+	position: absolute;
+}
+.navigationCon .list div.js-more img{
+	position: absolute;
+    top: -5px;
+    left: 45%;
+}
 .navigationCon .search{
 	float: right;
 	position: relative;

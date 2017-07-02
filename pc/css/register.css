@@ -99,6 +99,8 @@
     border: 1px solid #bcbcbc;
     border-radius: 2px;
     float: left;
+    background: url(../img/rememberUserName.png) no-repeat center;
+    background-size: 100%;;
 }
 .registerCon .acceptanceAgreement .i{
 	font-style: normal;

@@ -1,0 +1,91 @@
+/*pass*/
+.pass{
+	width: 100%;
+	background: #f5f6f8;
+}
+.pass .passcon{
+	width: 1000px;
+	margin: 0 auto;
+}
+.pass .passcon .tit{
+	padding: 24px 0px;
+}
+.pass .passcon .tit span{
+	font-size: 12px;
+	color: #666;
+	padding-left: 12px;
+	border-left: 4px solid #cb2c26;
+}
+.pass .passcon .con{
+	background: #fff;
+	padding: 60px 180px;
+}
+.pass .passcon .con .passImg{
+	display: block;
+	width: 100%;
+}
+.pass .passcon .con p{
+	margin: 25px 0;
+	margin-left: 140px;
+	display: block;
+	height: 34px;
+}
+.pass .passcon .con p span,.pass .passcon .con p input,.pass .passcon .con p b{
+	display: block;
+	float: left;
+}
+.pass .passcon .con p span{
+	color: #666;
+	font-size: 12px;
+	line-height: 34px;
+}
+.pass .passcon .con p input.name{
+	height: 32px;
+	width: 220px;
+	border: 1px solid #bcbcbc;
+	padding: 0 10px;
+	border-radius: 4px;
+	outline: none;
+	margin-left: 20px;
+}
+.pass .passcon .con p input.code{
+	height: 32px;
+	width: 110px;
+	border: 1px solid #bcbcbc;
+	padding: 0 10px;
+	border-radius: 4px;
+	outline: none;
+	margin-left: 20px;
+}
+.pass .passcon .con p b{
+	height: 30px;
+	width: 60px;
+	border: 1px solid #bcbcbc;
+	text-align: center;
+	line-height: 30px;
+	margin: 1px 10px 0px;
+}
+.pass .passcon .con p span.cursor{
+	cursor: pointer;	
+}
+.pass .passcon .con p button{
+	height: 32px;
+	width: 123px;
+	border-radius: 4px;
+	background: #CC2C26;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	margin-left: 70px;
+}
+.pass .botTit{
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+	line-height: 30px;
+	padding-bottom: 150px;
+}
+.pass .botTit span{
+	color: #cc2c26;
+}

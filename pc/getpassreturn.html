@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/config.css"/>
+		<link rel="stylesheet" type="text/css" href="css/getpassreturn.css"/>
+		<link rel="import" href="common.html">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/getpassreturn.js"></script>
+		<title>找回密码</title>
+	</head>
+	<body>
+		<div class="p-login-main">
+			<!--top-->
+			<div class="commonTop"></div>
+			<!--navigation-->
+			<div class="navigation">
+				<div class="navigationCon">
+					<div class="list">
+						<div>首页</div>
+						<div>欢迎大礼包</div>
+						<div>品牌旗舰体验中心</div>
+						<div>品质生活</div>
+						<div>养生尚品</div>
+						<div class="js-more" id="js-more">更多
+							<span id="js-moreList">
+								<b>关于我们</b>
+								<b>联系我们</b>
+								<b>加入我们</b>
+								<b>申请加入</b>
+								<b>品牌旗舰</b>
+								<b>商城介绍</b>
+								<b>企业家专访</b>
+								<img src="img/daosanjiao.png"/>
+							</span>
+						</div>
+					</div>
+					<div class="search">
+						<input type="text" placeholder="搜索商品" />
+						<img src="img/search.png"/>
+					</div>
+				</div>
+			</div>
+			<!--pass-->
+			<div class="pass">
+				<div class="passcon">
+					<div class="tit">
+						<span>首页 > 找回密码</span>
+					</div>
+					<div class="con">
+						<img class="passImg" src="img/pass01.jpg"/>
+						<p>
+							<span>登录名：</span>
+							<input class="name" type="text" placeholder="手机号/用户名/邮箱" name="" id="" value="" />
+						</p>
+						<p>
+							<span>验证码：</span>
+							<input class="code" type="text" name="" id="" value="" />
+							<b>2341</b>
+							<span class="cursor">换一张</span>
+						</p>
+						<p>
+							<button>下一步</button>
+						</p>
+					</div>
+					<p class="botTit">如果您忘记登录名，将无法找回您的账户信息，您可以点击这里<span>重新注册</span> 。如果您有任何疑问，请随时拨打服务热线：400-6789-8</p>
+				</div>
+			</div>
+			
+			<!--footer-->
+			<div class="commonBot"></div>
+		</div>
+		<script type="text/javascript">
+	  	    var link = document.querySelector('link[rel="import"]');
+		    var content = link.import;
+		    // 从 warning.html 的文档中获取 DOM。
+		    var el = content.querySelector('.TOP');
+		    var el1 = content.querySelector('.BOT');
+		    $('.commonTop').append(el.cloneNode(true));
+		    $('.commonBot').append(el1.cloneNode(true));
+	  	</script>
+	</body>
+</html>
