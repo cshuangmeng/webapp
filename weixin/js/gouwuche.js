@@ -38,7 +38,13 @@ $(function(){
 				for(var i=0;i<data.data.length;i++){
 					$shoplist.append('<div class="shop js-shop"><div class="shopName"><labal id="shop'+i+'" class="checkboxLabal" price="" totleNum=""></labal><input for="shop'+i+'" class="checkboxStyle" type="checkbox" name="checkShop"><span>'+data.data[i].shopName+'</span></div><div class="shopGoods js-shopGoods'+i+'"></div></div>');
 					for(var j=0;j<data.data[i].goods.length;j++){
-						$('.js-shopGoods'+i+'').append('<div class="shopGoodsList"><div class="check"><labal id="shop00_'+j+'" goodsId="'+data.data[i].goods[j].goodsId+'" itemId="'+data.data[i].goods[j].itemId+'" goodsId="'+data.data[i].goods[j].goodsId+'" class="checkboxLabal js-goodsLabal" price="'+data.data[i].goods[j].price+'" totleNum="1"></labal><input for="shop00_'+j+'" class="checkboxStyle" type="checkbox" name="checkItem"></div><div class="goodsImg"><img src="'+data.data[i].goods[j].headImg+'"/></div><div class="goodsCon"><p class="tit">'+data.data[i].goods[j].goodsName+'</p><div class="num"><span>￥'+data.data[i].goods[j].price+'</span><div class="numchange"><button  goodsId="'+data.data[i].goods[j].goodsId+'" class="reduce" price="'+data.data[i].goods[j].price+'">-</button><input type="text" class="changenum js-shuliang" value="1" class="num"/><button class="increase" price="'+data.data[i].goods[j].price+'" buyAmount="'+data.data[i].goods[j].buyAmount+'">+</button></div></div></div><div class="clear"></div></div>');
+						var typeId = 0;
+						if(data.data[i].goods[j].typeId == 2){
+							typeId = 2;
+						}else{
+							typeId = 0;
+						}
+						$('.js-shopGoods'+i+'').append('<div class="shopGoodsList"><div class="check"><labal id="shop00_'+j+'" goodsId="'+data.data[i].goods[j].goodsId+'" itemId="'+data.data[i].goods[j].itemId+'" goodsId="'+data.data[i].goods[j].goodsId+'" typeId="'+typeId+'" class="checkboxLabal js-goodsLabal" price="'+data.data[i].goods[j].price+'" totleNum="1"></labal><input for="shop00_'+j+'" class="checkboxStyle" type="checkbox" name="checkItem"></div><div class="goodsImg"><img src="'+data.data[i].goods[j].headImg+'"/></div><div class="goodsCon"><p class="tit">'+data.data[i].goods[j].goodsName+'</p><div class="num"><span>￥'+data.data[i].goods[j].price+'</span><div class="numchange"><button  goodsId="'+data.data[i].goods[j].goodsId+'" class="reduce" price="'+data.data[i].goods[j].price+'">-</button><input type="text" class="changenum js-shuliang" value="1" class="num"/><button class="increase" price="'+data.data[i].goods[j].price+'" buyAmount="'+data.data[i].goods[j].buyAmount+'">+</button></div></div></div><div class="clear"></div></div>');
 						config.shopPrice = 0;
 						config.shopNum = 0;
 						$('.js-shopGoods'+i+' labal').each(function(){
@@ -55,6 +61,9 @@ $(function(){
 			$('.js-goodsLabal').each(function(){
 				config.allPrice = config.allPrice + parseInt($(this).attr('price'))*parseInt($(this).attr('totleNum'));
 				config.allNum = config.allNum + parseInt($(this).attr('totleNum'));
+				if($(this).attr('typeId') == 2){
+					config.isInviteCode = 1;
+				}
 			});
 			$allGoogs.attr("price",config.allPrice);
 			$allGoogs.attr("totleNum",config.allNum);
@@ -247,11 +256,12 @@ $(function(){
 		        async:false,
 		        success: function(data){
 		        	if(data.code == 0){
-		        					window.location.href="/weixin/dingdanqueren.html?openid="+configData.openid+"&uuid="+configData.uuid+"&itemIds="+config.itemIds;
+		        		//isInviteCode
+		        					window.location.href="/weixin/dingdanqueren.html?openid="+configData.openid+"&uuid="+configData.uuid+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode;
 		        	}else{
 		        		$tipContent.text(data.msg);
 						showTip();
-		        	}          
+		        	}
 		        }
 		    });
 		}else{
