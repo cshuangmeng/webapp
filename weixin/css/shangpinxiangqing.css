@@ -1,8 +1,10 @@
+.p-spxq-main{
+	padding-bottom: 45px;
+}
 .p-spxq-main,body{
 	width: 100%;
 	height: 100%;
 	background: #f3f4f5;
-	padding-bottom: 50px;
 }
 .clear{
 	clear: both;
