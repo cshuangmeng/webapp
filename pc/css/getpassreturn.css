@@ -59,11 +59,11 @@
 }
 .pass .passcon .con p b{
 	height: 30px;
-	width: 60px;
 	border: 1px solid #bcbcbc;
 	text-align: center;
 	line-height: 30px;
 	margin: 1px 10px 0px;
+	padding: 0 10px;
 }
 .pass .passcon .con p span.cursor{
 	cursor: pointer;	
@@ -88,4 +88,63 @@
 }
 .pass .botTit span{
 	color: #cc2c26;
+}
+/*er*/
+.con .telCode{
+	display: block;
+	width: 100%;
+}
+.con .telCode span{
+	display: block;
+	float: left;
+}
+.con .telCode input{
+	outline: none;
+	border: 1px solid #BCBCBC;
+	height: 44px;
+	width: 210px;
+	padding: 0;
+	margin: 0;
+	padding: 0 10px;
+}
+.con .telCode b{
+	display: block;
+	font-weight: 100;
+	cursor: pointer;
+	float: left;
+	border: 1px solid #BCBCBC;
+	height: 44px;
+	padding: 0 15px;
+	color: #cf3a35;
+	font-size: 13px;
+	text-align: center;
+	line-height: 44px;
+}
+/*san*/
+.pass .passcon .con p span{
+	line-height: 34px;
+	color: #333;
+	font-size: 14px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+	width: 80px;
+	text-align: right;
+}
+.con .newPass,.con .newPassAgain{
+	height: 44px;
+	padding: 0 10px;
+	width: 300px;
+	line-height: 44px;
+	color: #999;
+	font-size: 14px;
+}
+.pass .con p.getPssSuccess{
+	padding: 0;
+	margin: 0;
+	color: #555;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
 }
