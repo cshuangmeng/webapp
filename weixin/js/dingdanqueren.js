@@ -63,7 +63,12 @@ $(function(){
     			}
         		//地址
         		if(data.data.address == null || data.data.address == "" || data.data.address == undefined){
-        			window.location.href="/weixin/addAddress.html?openid="+config.openid+"&uuid="+config.uuid+"&page=0"+"&itemIds="+config.itemIds;
+        			if(config.isInviteCode){
+        				window.location.href="/weixin/addAddress.html?openid="+config.openid+"&uuid="+config.uuid+"&page=0"+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode;
+        			}else{
+        				window.location.href="/weixin/addAddress.html?openid="+config.openid+"&uuid="+config.uuid+"&page=0"+"&itemIds="+config.itemIds;
+        			}
+        			
         		}else{
         			if(data.data.address.consigner){
 	        			$consigner.text(data.data.address.consigner);
