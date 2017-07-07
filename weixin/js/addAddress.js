@@ -252,11 +252,7 @@ $(function(){
 				    		//config.page  0:订单确认
 				    		if(config.page == 0){
 				    			config.goodId = getUrlParam('itemIds');
-				    			if(config.isInviteCode){
 				    				window.location.href="/weixin/dingdanqueren.html?openid="+config.openid+"&uuid="+config.uuid+"&itemIds="+config.goodId+"&isInviteCode="+config.isInviteCode;
-				    			}else{
-				    				window.location.href="/weixin/dingdanqueren.html?openid="+config.openid+"&uuid="+config.uuid+"&itemIds="+config.goodId;
-				    			}
 				    			
 				    		}
 				    	}
