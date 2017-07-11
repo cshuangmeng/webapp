@@ -117,12 +117,15 @@
 	border: 1px solid #e6e9e8;
 	padding: 0 16px;
 	font-size: 14px;
-	color: #E6E9E8;
+	color: #fff;
 	height: 38px;
 	background: none;
 	border-radius: 4px;
 	margin-top: 5px;
 	width: 300px;
+}
+input::-webkit-input-placeholder{
+	color: #fff;
 }
 .navigationCon .search img{
 	display: block;
