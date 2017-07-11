@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/config.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shoppingCart.css"/>
+		<link rel="stylesheet" type="text/css" href="css/payFor.css"/>
+		<link rel="import" href="common.html">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<title>支付页面</title>
+	</head>
+	<body>
+		<!--top-->
+		<div class="RigestTop">
+			
+		</div>
+		<!--message_cue-->
+		<div class="message_cue">
+			<ul class="message_cue_con1">
+				<li class="message_cue_con1_l">
+					<img src="img/payfor1 (1).gif" />
+				</li>
+				<li class="message_cue_con1_c">
+					<p>订单提交成功</p>
+					<p>等待买家付款</p>
+				</li>
+				<li class="message_cue_con1_r">
+					<p>应付金额：<span>¥4923</span></p>
+				</li>
+			</ul>
+			<img src="img/pay_border.png" />
+			<ul class="message_cue_con2">
+				<li class="message_cue_con2_top">
+					<div class="message_cue_con2_title1">订单信息：</div>
+					<p>尚可茶品精选名茶专场-青云碧螺春两罐10g</p>
+					<p>尚可茶品精选名茶专场-青云碧螺春两罐10g</p>
+				</li>
+				<li class="message_cue_con2_bottom">
+					<div class="message_cue_con2_title2">收货信息：</div>
+					<p>联系电话：152121010101</p>
+					<p>收货人：陈陈陈</p>
+					<p style="color: #DB3E40;">上海市普陀区兰溪路   君悦苑3号楼   </p>
+				</li>
+			</ul>
+			<img src="img/pay_border.png" />
+			<ul class="message_cue_con3">
+				<li class="message_cue_con2_title3">
+					<p>在线支付</p>
+				</li>
+				<li class="select">
+					<input type="radio" checked="checked" name="Sex" value="male" />
+					<img src="img/payfor1 (3).gif" />
+					<input type="radio" name="Sex" value="male" style="margin-left: 54px;" />
+					<img src="img/payfor1 (2).gif" />
+				</li>
+			</ul>
+			<img src="img/pay_border.png" />
+			<div class="payForMoney">
+				<p>立即付款</p>
+			</div>
+			
+			
+			
+		</div>
+		
+
+		
+		<div class="commonBot"></div>
+		<script type="text/javascript">
+	  	    var link = document.querySelector('link[rel="import"]');
+		    var content = link.import;
+		    // 从 warning.html 的文档中获取 DOM。
+		    var el1 = content.querySelector('.BOT');
+		    $('.commonBot').append(el1.cloneNode(true));
+		    var elll1 = content.querySelector('.Rigest_top');
+		    $('.RigestTop').append(elll1.cloneNode(true));
+		    
+	  	</script>
+	</body>
+</html>
