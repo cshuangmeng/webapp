@@ -28,6 +28,7 @@ $(function(){
 	//获取url携带的参数
 	config.openid = undefined != configData.openid ? configData.openid : getUrlParam('openid');
 	config.uuid = undefined != configData.uuid ? configData.uuid : getUrlParam('uuid');
+	config.unionId =  undefined != configData.unionId ? configData.unionId : getUrlParam('unionId');
 	config.itemIds = getUrlParam('itemIds');
 	config.isInviteCode = getUrlParam('isInviteCode');
 	//share
@@ -236,7 +237,7 @@ $(function(){
 		$.ajax({
 		    type: "POST",
 		    url: login,
-		    data:{"unionId":configData.unionId,"openId":config.openid},
+		    data:{"unionId":config.unionId,"openId":config.openid},
 		    dataType:"json",
 		    async:false,
 		    success: function(data){

@@ -160,7 +160,7 @@ $(function(){
 					        async:false,
 					        success: function(data){
 					        	if(data.code == 0){
-					        					window.location.href="/weixin/dingdanqueren.html?openid="+config.openid+"&uuid="+config.uuid+"&itemIds="+config.goodId+"&isInviteCode="+config.isInviteCode;
+					        					window.location.href="/weixin/dingdanqueren.html?openid="+config.openid+"&uuid="+config.uuid+"&itemIds="+config.goodId+"&isInviteCode="+config.isInviteCode+"&unionId="+config.unionId;
 					        	}else{
 					        		$tipContent.text(data.msg);
 									$('#js-tipCon').css('display','block');
