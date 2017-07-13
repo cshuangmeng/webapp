@@ -49,7 +49,7 @@ $(function(){
 			$.ajax({
 			    type: "POST",
 			    url: login,
-			    data:{"openId":config.openid},
+			    data:{"unionId":configData.unionId,"openId":config.openid},
 			    dataType:"json",
 			    async:false,
 			    success: function(data){

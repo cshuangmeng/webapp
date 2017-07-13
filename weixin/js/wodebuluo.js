@@ -17,7 +17,7 @@ $(function(){
 	$.ajax({
 	    type: "POST",
 	    url: login,
-	    data:{"openId":configData.openid},
+	    data:{"unionId":configData.unionId,"openId":configData.openid},
 	    dataType:"json",
 	    async:false,
 	    success: function(data){

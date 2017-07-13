@@ -134,7 +134,7 @@ $(function(){
 						type: "POST",
 					    url: useraddGoods,
 					    dataType:"json",
-					    data:{"uuid":config.uuid,"goodsId":config.goodId,"amount":"1"},
+					    data:{"unionId":configData.unionId,"uuid":config.uuid,"goodsId":config.goodId,"amount":"1"},
 					    async:false,
 						success:function(data){
 							if(data.code == 0){
