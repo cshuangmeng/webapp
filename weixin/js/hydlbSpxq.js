@@ -11,6 +11,7 @@ $(function(){
 	//获取url携带的参数
 	config.openid = undefined != configData.openid ? configData.openid : getUrlParam('openid');
 	config.uuid = undefined != configData.uuid ? configData.uuid : getUrlParam('uuid');
+	config.unionId = undefined != configData.unionId ? configData.unionId : getUrlParam('unionId');
 	//share
 	share('20','',config.goodId,'');
 	//关闭弹框
@@ -98,7 +99,7 @@ $(function(){
 			$.ajax({
 			    type: "POST",
 			    url: login,
-			    data:{"unionId":configData.unionId,"openId":config.openid},
+			    data:{"unionId":config.unionId,"openId":config.openid},
 			    dataType:"json",
 			    async:false,
 			    success: function(data){
@@ -145,7 +146,7 @@ $(function(){
 			$.ajax({
 			    type: "POST",
 			    url: login,
-			    data:{"openId":config.openid},
+			    data:{"unionId":config.unionId,"openId":config.openid},
 			    dataType:"json",
 			    async:false,
 			    success: function(data){
