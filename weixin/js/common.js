@@ -12,10 +12,11 @@ if(null!=configData.code){
 	    type: "POST",
 	    url: oa,
 	    dataType:"json",
-	    data:{"code":configData.code},
+	    data:{"code":configData.code,"platform":"1"},
 	    async:false,
 	    success: function(data){
 			configData.openid = data.data.openId;
+			configData.unionId = data.data.unionId;
 			if(configData.openid == undefined){
 			    config();
 			}else{
@@ -61,7 +62,7 @@ function Login(){
 	$.ajax({
 	    type: "POST",
 	    url: login,
-	    data:{"openId":configData.openid},
+	    data:{"unionId":configData.unionId,"platform":"1"},
 	    dataType:"json",
 	    async:false,
 	    success: function(data){
