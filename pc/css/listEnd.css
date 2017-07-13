@@ -196,7 +196,7 @@
 	margin: 0 390px 0 47px;
 }
 .MiddleConTitle_3{
-	margin: 0 117px;
+	margin: 0 110px;
 }
 .MiddleConTitle_5{
 	margin-left: 117px;
@@ -258,20 +258,14 @@
 .count{
 	margin: 0 114px;
 }
-.count span{
-	display: block;
-	width: 24px;
-	height: 22px;
-/*	border: 1px solid #dfdfdf;*/
-	float: left;
-	text-align: center;
-}
-.count .add,.count .minus{
-	color: #ccc;
-	cursor: pointer;
+
+.count b{
+	font-weight: 100;
 }
 .count .numberCode{
 	color: #4b4b4b;
+	font-size: 12px;
+	
 }
 .delectImg{
 	display: block;
@@ -308,12 +302,41 @@
 	float: left;
 }
 .fareBlank{
-	height: 30px;
+	height: 12px;
 	border-bottom: 1px solid #e9e9e9;
 }
+.coupon{
+	height: 62px;
+}
+.coupon li{
+	height: 14px;
+	line-height: 14px;
+	float: left;
+}
+.cupon_con_l p,.cupon_con_c p{
+	color: #484747;
+	float: left;
+}
+.cupon_con_l_1{
+	width: 98px;
+	height: 14px;
+	border: 1px solid #999;
+	margin-left: 20px;
+
+}
+.cupon_con_c_1{
+	width: 38px;
+	height: 14px;
+	border: 1px solid #999;
+	margin: 0 10px;
+}
+
+
+
+
 .priceAll{
 	padding-top: 24px;
-	height: 82px;
+	height: 210px;
 }
 .priceAllCon{
 	width: 970px;

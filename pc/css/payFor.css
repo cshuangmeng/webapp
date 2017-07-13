@@ -1,7 +1,6 @@
 /*message_cue*/
 .message_cue{
 	width: 1001px;
-	height: 978px;
 	margin: 0 auto;
 }
 .message_cue_con1{
@@ -31,25 +30,42 @@
 	margin-top: 136px;
 }
 .message_cue_con2{
-	height: 240px;
+	height: 446px;
 }
 .message_cue_con2_top{
-	padding-top: 24px;
-	height:84px;
+	padding-top: 20px;
+	height:100px;
 }
-.message_cue_con2_title1,.message_cue_con2_title2{
+.message_cue_con2_title1,.message_cue_con2_title2,.message_cue_con2_title4{
 	height: 28px;
 	font-size: 16px;
 	line-height: 28px;
 }
-.message_cue_con2_top p,.message_cue_con2_bottom p{
+.message_cue_con2_top p,.message_cue_con2_xia p{
 	height: 26px;
 	line-height: 26px;
 	margin-left: 32px;
 }
 .message_cue_con2_bottom{
-	height: 134px;
+	padding-top: 20px;
+	height: 80px;
 }
+.message_cue_con2_bottom span{
+	height: 26px;
+	line-height: 26px;
+	margin-left: 32px;
+	display: block;
+	float: left;
+}
+.message_cue_con2_xia{
+	padding-top: 20px;
+	height: 126px;
+}
+
+.message_cue_con3{
+	height: 174px;
+}
+
 .message_cue_con2_title3{
 	height: 60px;
 	padding-top: 24px;
@@ -67,7 +83,7 @@
 }
 
 .payForMoney{
-	height: 324px;
+	height: 186px;
 }
 .payForMoney p{
 	width: 136px;
@@ -79,7 +95,6 @@
 	line-height: 48px;
 	text-align: center;
 	cursor: pointer;
-	margin-top: 64px;
 }
 
 

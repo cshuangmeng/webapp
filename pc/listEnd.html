@@ -13,33 +13,8 @@
 	</head>
 	<body>
 		<!--top-->
-		<div class="shoppingCartTop">
-			<div class="shoppingCartTopCon">
-				<div class="con_left">
-					<img src="img/logo.png" />
-				</div>
-				<div class="con_right">
-					<div class="con_right_top">
-						<span>你好，15712816311</span>
-						<span>【退出】</span>
-						<span>购物车</span>
-					</div>
-					<ul class="con_right_bottom">
-						<li>
-							<img src="img/pinpaizhigong.png"/>
-							<span>品牌直供</span>
-						</li>
-						<li style="margin: 0 30px;">
-							<img src="img/didaopinzhi.png"/>
-							<span>道地品质</span>
-						</li>
-						<li>
-							<img src="img/zhongqiliandong.png"/>
-							<span style="text-align: right;">众企联动</span>
-						</li>
-					</ul>
-				</div>
-			</div>
+		<div class="RigestTop">
+			
 		</div>
 		<!--middle-->
 		<div class="shoppingCartMiddle">
@@ -122,10 +97,8 @@
 						<img style="margin-left: 30px;" class="goodsImage" src="img/goods.png" />
 						<p class="goods_introduce">尚可茶品精选名茶专场-青云碧螺春两罐10g</p>
 						<p class="goods_price">¥3402</p>
-						<div class="count">
-							<!--<span class="add">+</span>-->
-							<span class="numberCode">1</span>
-							<!--<span class="minus">-</span>-->
+						<div class="count" style="margin: 16px 120px 0 120px;">
+							<b class="numberCode">1</b>
 						</div>
 						<div class="preferential">
 							<p>省66</p>
@@ -137,10 +110,8 @@
 						<img style="margin-left: 30px;" class="goodsImage" src="img/goods.png" />
 						<p class="goods_introduce">尚可茶品精选名茶专场-青云碧螺春两罐10g</p>
 						<p class="goods_price">¥3402</p>
-						<div class="count">
-							<!--<span class="add">+</span>-->
-							<span class="numberCode">1</span>
-							<!--<span class="minus">-</span>-->
+						<div class="count" style="margin: 16px 120px 0 120px;">
+							<b class="numberCode">1</b>
 						</div>
 						<div class="preferential">
 							<p>省66</p>
@@ -152,10 +123,8 @@
 						<img style="margin-left: 30px;" class="goodsImage" src="img/goods.png" />
 						<p class="goods_introduce">尚可茶品精选名茶专场-青云碧螺春两罐10g</p>
 						<p class="goods_price">¥3402</p>
-						<div class="count">
-							<!--<span class="add">+</span>-->
-							<span class="numberCode">1</span>
-							<!--<span class="minus">-</span>-->
+						<div class="count" style="margin: 16px 120px 0 120px;">
+							<b class="numberCode">1</b>
 						</div>
 						<div class="preferential">
 							<p>省66</p>
@@ -166,13 +135,37 @@
 				</ul>
 				<div class="fare">
 					<button class="fareBtn">运费</button>
-					<p class="fareTxt">本组商品以免运费</p>
+					<p class="fareTxt">本组商品已经免运费</p>
 				</div>
-				<div class="fareBlank">
+				<div class="fareBlank" style="height: 12px;">
 					
 				</div>
-				<div class="priceAll">
+				<div class="priceAll" style="height: 210px;">
+					<ul class="coupon">
+						<li style="margin-left: 30px;" class="cupon_con_l">
+							<p>填写部落番号</p>
+							<p class="cupon_con_l_1"></p>
+						</li>
+						<li style="margin: 0 160px;" class="cupon_con_c">
+							<p>本次使用</p>
+							<p class="cupon_con_c_1"></p>
+							<p>部落币（100）</p>
+						</li>
+						<li class="cupon_con_c">
+							<p>本次使用</p>
+							<p class="cupon_con_c_1"></p>
+							<p>部落币（100）</p>
+						</li>
+					</ul>
 					<ul class="priceAllCon">
+						<li>
+							<span style="color: #333;">¥20</span>
+							<span>部落分抵用</span>
+						</li>
+						<li>
+							<span style="color: #333;">¥20</span>
+							<span>部落币抵用</span>
+						</li>
 						<li>
 							<span style="color: #333;">¥442</span>
 							<span>商品金额</span>
@@ -204,6 +197,8 @@
 				    // 从 warning.html 的文档中获取 DOM。
 				    var el1 = content.querySelector('.BOT');
 				    $('.commonBot').append(el1.cloneNode(true));
+				    var elll1 = content.querySelector('.Rigest_top');
+		    		$('.RigestTop').append(elll1.cloneNode(true));
 			  	</script>
 				
 			</div>
