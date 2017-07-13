@@ -87,7 +87,7 @@ $(function(){
 				$.ajax({
 					type:"post",
 					url:register,
-					data:{"platform":"1","mobile":$telNum,'openId':config.openid,'code':$addcode.val()},
+					data:{"platform":"1","cellphone":$telNum,'openId':config.openid,'code':$addcode.val()},
 					dataType:"json",
 	        		async:false,
 					success:function(data){
