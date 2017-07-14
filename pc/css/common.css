@@ -17,6 +17,9 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
     margin: 0;
     padding: 0;
 }
+p,span{
+	font-size: 12px;
+}
 a {
   text-decoration: none;
   color: #555;
@@ -153,7 +156,6 @@ button,input,textarea,div,img{
 	width: 25px;
 	height: 24px;
 	background: url(../img/shoppingCartImg.png) no-repeat;
-	margin-top: 6px;
 }
 .con_right_bottom{
 	height: 37px;
