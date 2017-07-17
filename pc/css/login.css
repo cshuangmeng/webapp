@@ -89,3 +89,15 @@
 	display: block;
 	width: 20px;
 }
+.logincontainer{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 15%;
+    padding-left: 40%;
+    display: none;
+}

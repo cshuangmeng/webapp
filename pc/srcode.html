@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<meta name='apple-mobile-web-app-capable' content='yes' />
+<meta name="format-detection" content="telephone=no" />
+<meta http-equiv='Content-Type' content='textml;charset=UTF-8' />
+<script src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+</head>
+<body>
+	<div id="login_container"></div>
+	<input type="button" value="登  录"/>
+	<script type="text/javascript">
+		var obj = new WxLogin({
+                              id:"login_container", 
+                              appid: "wx80d859c110cefa54", 
+                              scope: "snsapi_login", 
+                              redirect_uri: "http%3A%2F%2Fapi.tangseng.shop",
+                              state: "STATE",
+                              style: "white",
+                              href: ""
+                            });
+	</script>
+</body>
+</html>
