@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/config.css"/>
+		<link rel="stylesheet" type="text/css" href="css/joinContactUs.css"/>
+		<link rel="import" href="common.html">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<title>联系加入我们</title>
+	</head>
+	<body>
+		<!--top-->
+		<div class="commonTop"></div>
+		<!--navigation-->
+		<div class="commomNavigation"></div>
+		<!--joinContactUs-->
+		<div class="joinContactUs">
+			<div class="contactUs">
+				<p class="contactUs_title">联系我们</p>
+				<p class="contactUs_title_bg"></p>
+				<div class="contactUs_con">
+					<p>联系电话：0755-8268-9595</p>
+					<p>163邮箱 ： zhiyuan@163.com</p>
+					<p>传真：0755-8389-6336</p>
+				</div>
+				<div class="contactUs_map"></div>
+				<p class="contactUs_title_bg_bottom"></p>
+				<p class="contactUs_button">现在就去</p>
+			</div>
+			<div class="joinUs">
+				<p class="joinUs_title">申请加入</p>
+				<div class="joinUs_con">
+					<input type="text" placeholder="企业名称" />
+					<input type="text" placeholder="企业网址" />
+					<input type="text" placeholder="主打产品" />
+					<input type="text" placeholder="产品优势" />
+					<input type="text" placeholder="联系人"/>
+					<input type="text" placeholder="联系方式" />
+					<input class="joinUs_con_txt" type="text" placeholder="请输入内容" />
+					
+				</div>
+				<p class="joinUs_txt">申请加入</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--footer-->
+		<div class="commonBot"></div>
+		<script type="text/javascript">
+	  	    var link = document.querySelector('link[rel="import"]');
+		    var content = link.import;
+		    // 从 warning.html 的文档中获取 DOM。
+		    var el = content.querySelector('.TOP');
+		    var el1 = content.querySelector('.BOT');
+		    var el2= content.querySelector('.NAVIGATION_commom');
+		    $('.commonTop').append(el.cloneNode(true));
+		    $('.commonBot').append(el1.cloneNode(true));
+		    $('.commomNavigation').append(el2.cloneNode(true));
+	  	</script>
+	</body>
+</html>

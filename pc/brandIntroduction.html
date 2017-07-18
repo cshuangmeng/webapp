@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/config.css"/>
+		<link rel="stylesheet" type="text/css" href="css/brandIntroduction.css"/>
+		<link rel="import" href="common.html">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<title>品牌集群</title>
+	</head>
+	<body>
+		<!--top-->
+		<div class="commonTop"></div>
+		<!--navigation-->
+		<div class="commomNavigation"></div>
+		<!--brandItroduction-->
+		<div class="brandItroduction">
+			<div class="brandItroduction_bg"></div>
+			<div class="brandItroduction_txt">
+				<p>上海高翎实业有限公司正全速布局以“品牌ip化”和“渠道集成化”为助推力的大健康生态产业集群</p>
+				<p>努力打造充满活力、开放的生态 型系统未来公司将充分借助资本市场工具加快打造生命健康生态系统</p>
+			</div>
+			<ul class="brandItroduction_logo">
+				<li>
+					<img src="img/brandItroduction_logo-1.jpg"/>
+					<img class="brandItroduction_logo_center" src="img/brandItroduction_logo-2.jpg"/>
+					<img src="img/brandItroduction_logo-3.jpg"/>
+				</li>
+				<li>
+					<img src="img/brandItroduction_logo-4.jpg"/>
+					<img class="brandItroduction_logo_center" src="img/brandItroduction_logo-5.jpg"/>
+					<img src="img/brandItroduction_logo-6.jpg"/>
+				</li>
+			</ul>
+			<div class="jiuli_tribe">
+				<div class="jiuli_tribe_bg"></div>
+				<div class="jiuli_tribe_txt">
+					<p class="jiuli_tribe_txt_1">
+						九黎部落品牌集群是
+						<span>线下品牌旗舰体验中心</span>的重要组成部分，其集群内品牌在c端的良好口碑和市场知名度，
+						将为tangsheng.shop商城带来良好的客流及口碑
+					</p>
+					<p>
+						一线品牌的口碑效应为tangseng.shop商城实现C2B创造条件，
+						<span>高翎线上线下的 运营体系</span>也将实现各品牌之间的流量互导，
+						并进一步提升九黎部落品牌集群的影响力
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--footer-->
+		<div class="commonBot"></div>
+		<script type="text/javascript">
+	  	    var link = document.querySelector('link[rel="import"]');
+		    var content = link.import;
+		    // 从 warning.html 的文档中获取 DOM。
+		    var el = content.querySelector('.TOP');
+		    var el1 = content.querySelector('.BOT');
+		    var el2= content.querySelector('.NAVIGATION_commom');
+		    $('.commonTop').append(el.cloneNode(true));
+		    $('.commonBot').append(el1.cloneNode(true));
+		    $('.commomNavigation').append(el2.cloneNode(true));
+	  	</script>
+	</body>
+</html>
