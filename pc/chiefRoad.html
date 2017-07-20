@@ -66,20 +66,28 @@
 			
 			<div class="chiefRoad_activity">
 				<ul class="chiefRoad_activity_img">
-					<li class="chiefRoad_activity_img_l">
-						<p>部落分</p>
+					<li>
+						<img class="one hover" src="img/1_01_on.png"/>
 					</li>
-					<li class="chiefRoad_activity_img_c chiefRoad_activity_img_change">
-						<p>部落币</p>
-						<img src="img/corner_img.png" />
+					<li>
+						<img src="img/2_01.png"/>
 					</li>
-					<li class="chiefRoad_activity_img_r">
-						<p>部落规则</p>
+					<li>
+						<img src="img/3_01.png"/>
 					</li>
 				</ul>
 				<ul class="chiefRoad_activity_txt">
 					<li class="chiefRoad_activity_txt_l">
-						<p>1</p>
+						<p class="chiefRoad_activity_txt_c_title01">部落分的获取</p>
+						<div class="chiefRoad_activity_txt_c_title01_con">
+							<p>1.酋长奖励</p>
+							<p>2.族员在商城购买产品，每消费1人民币积1部落分（实付现金）</p>
+						</div>
+						<p class="chiefRoad_activity_txt_c_title01">部落分的使用</p>
+						<div style="width: 190px;" class="chiefRoad_activity_txt_c_title01_con">
+							<p>1.部落分可用于商城购物抵扣消费</p>
+							<p>2.部落分抵扣（3部落分=1人民币）</p>
+						</div>
 					</li>
 					<li class="chiefRoad_activity_txt_c">
 						<p class="chiefRoad_activity_txt_c_title01">部落币的获取</p>
@@ -95,7 +103,16 @@
 						</div>
 					</li>
 					<li class="chiefRoad_activity_txt_r">
-						<p>3</p>
+						<p class="chiefRoad_activity_txt_c_title01">每个消费者都可以晋升酋长，而每位酋长亦可以构建自己的部落</p>
+						<p class="chiefRoad_activity_txt_c_title01">酋长权利</p>
+						<div style="width: 190px;" class="chiefRoad_activity_txt_c_title01_con">
+							<p>1.开创自己的个性部落</p>
+							<p>2.新品上线的总和评审</p>
+							<p>3.封赏自己的族员</p>
+							<p>4.任命部落的首领</p>
+							<p>5.DIY自己的族群</p>
+							<p>6.代表部落出席 品牌峰会 拷贝</p>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -116,11 +133,32 @@
 		    $('.commonBot').append(el1.cloneNode(true));
 		    $('.commomNavigation').append(el2.cloneNode(true));
 		    
-		    $(function(){
-		    	
-		    })
+		    $('.chiefRoad_activity_img li').each(function(){
+		    	$(this).mouseover(function(){
+		    		var index = $(this).index();
+		    		var num = $(this).index()+1;
+		    		$(this).find('img').addClass('hover');
+		    		$(this).find('img').attr('src',"img/"+num+"_01_on.png");
+		    		$(this).siblings().find('img').removeClass('hover');
+		    		$(this).parent().find('.one').attr('src',"img/1_01.png");
+		    		$(this).find('img').siblings().removeClass('hover');
+		    		$('.chiefRoad_activity_txt').find('li').eq(index).show();
+		    		$('.chiefRoad_activity_txt').find('li').eq(index).siblings().hide();
+		    	});
+		    	$(this).mouseout(function(){
+		    		var index = $(this).index();
+		    		var num = $(this).index()+1;
+		    		$(this).find('img').attr('src',"img/"+num+"_01.png");
+		    		$(this).find('img').removeClass('hover');
+		    		$('.chiefRoad_activity_txt').find('li').eq(index).hide();
+		    	});
+		    });
+		    $('.chiefRoad_activity_img').mouseout(function(){
+	    		$(this).find('.one').addClass('hover');
+	    		$(this).find('.one').attr('src',"img/1_01_on.png");
+	    		$('.chiefRoad_activity_txt').find('li').eq(0).show();
+	    	});
 
-		    
 	  	</script>
 	</body>
 </html>

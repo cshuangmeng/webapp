@@ -118,15 +118,17 @@
 .chiefRoad_activity_img li{
 	float: left;
 	height: 330px;
+	width: 33.3%;
 }
-.chiefRoad_activity_img li p{
-	width: 214px;
-	height: 236px;
-	border-radius: 10px;
-	font-size: 18px;
-	color: #747472;
-	text-align: center;
-	line-height: 400px;
+.chiefRoad_activity_img li img{
+	display: block;
+	margin: 0 auto;
+	width: 237px;
+	height: 224px;
+}
+.chiefRoad_activity_img li img.hover{
+	width: 278px;
+	height: 293px;
 }
 
 .chiefRoad_activity_img_l p{
@@ -171,7 +173,7 @@
 	width: 990px;
 	height: 320px;
 }
-.chiefRoad_activity_txt_l{
+.chiefRoad_activity_txt_c{
 	display: none;
 }
 .chiefRoad_activity_txt_r{
@@ -192,6 +194,7 @@
 .chiefRoad_activity_txt_c_title01_con p{
 	line-height: 24px;
 	color: #5b5d5c;
+	text-align: center;
 }
 
 
