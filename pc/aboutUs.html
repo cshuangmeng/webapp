@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/config.css"/>
+		<link rel="stylesheet" type="text/css" href="css/aboutUs.css"/>
+		<link rel="import" href="common.html">
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<title>关于我们</title>
+	</head>
+	<body>
+		<!--top-->
+		<div class="commonTop"></div>
+		<!--navigation-->
+		<div class="commomNavigation"></div>
+		<!--aboutUs-->
+		<div class="aboutUs_top"></div>
+		<div class="aboutUs">
+			<div class="aboutUs_txt">
+				<p class="aboutUs_txt01">About us</p>
+				<p class="aboutUs_txt02">关于我们</p>
+				<p class="aboutUs_line"></p>
+				<p class="aboutUs_txt03"></p>
+				<p class="aboutUs_txt01">Our idea</p>
+				<p class="aboutUs_txt02">我们的理念</p>
+				<p class="aboutUs_line"></p>
+			</div>
+			<ul class="aboutUs_list">
+				<li>
+					<div class="aboutUs_list_l">
+						<p class="aboutUs_list_img"></p>
+						<p class="aboutUs_list_title">品牌共振</p>
+						<p class="aboutUs_list_con">以各产业龙头企业的品牌影响力形成聚合效应，去伪存真,解决当下电商购物难题</p>
+					</div>
+					<div class="aboutUs_list_r">
+						<p class="aboutUs_list_img_2"></p>
+						<p class="aboutUs_list_title">品牌共振</p>
+						<p class="aboutUs_list_con">追求卓越品质，提升生活质量,致力于打造家庭健康消费首选平台</p>
+					</div>
+				</li>
+				<li class="aboutUs_list_bottom">
+					<div class="aboutUs_list_l">
+						<p class="aboutUs_list_img_3"></p>
+						<p class="aboutUs_list_title">资源共享</p>
+						<p class="aboutUs_list_con">提高资源的利用效率,搭建社群经济完整体系，促使社群价值最大化</p>
+					</div>
+					<div class="aboutUs_list_r">
+						<p class="aboutUs_list_img_4"></p>
+						<p class="aboutUs_list_title">联合共赢</p>
+						<p class="aboutUs_list_con">围绕一线品牌，联合品牌专卖店众企联动，打造地域旗舰体验中心，搭建共享经济模型，开启品牌年度大型回馈活动</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--footer-->
+		<div class="commonBot"></div>
+		<script type="text/javascript">
+	  	    var link = document.querySelector('link[rel="import"]');
+		    var content = link.import;
+		    // 从 warning.html 的文档中获取 DOM。
+		    var el = content.querySelector('.TOP');
+		    var el1 = content.querySelector('.BOT');
+		    var el2= content.querySelector('.NAVIGATION_commom');
+		    $('.commonTop').append(el.cloneNode(true));
+		    $('.commonBot').append(el1.cloneNode(true));
+		    $('.commomNavigation').append(el2.cloneNode(true));
+		</script>
+	</body>
+</html>
