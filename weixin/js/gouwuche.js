@@ -257,7 +257,7 @@ $(function(){
 		        success: function(data){
 		        	if(data.code == 0){
 		        		//isInviteCode
-		        					window.location.href="/weixin/dingdanqueren.html?openid="+configData.openid+"&uuid="+configData.uuid+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode;
+		        					window.location.href="/weixin/dingdanqueren.html?openid="+configData.openid+"&uuid="+configData.uuid+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode+"&unionId="+configData.unionId;
 		        	}else{
 		        		$tipContent.text(data.msg);
 						showTip();

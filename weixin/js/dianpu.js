@@ -11,6 +11,7 @@ $(function(){
 	//获取url携带的参数
 	config.openid = undefined != configData.openid ? configData.openid : getUrlParam('openid');
 	config.uuid = undefined != configData.uuid ? configData.uuid : getUrlParam('uuid');
+	config.unionId = undefined != configData.unionId ? configData.unionId : getUrlParam('unionId');
 	//share
 	share('7','','',config.shopId);
 	//加载商铺详情(id=1)
@@ -112,7 +113,7 @@ $(function(){
 				position();
 				$('.good').click(function(){
 					config.goodId = $(this).attr('goodid');
-					window.location.href="/weixin/shangpinxiangqing.html?openid="+config.openid+"&uuid="+config.uuid+"&goodId="+config.goodId;
+					window.location.href="/weixin/shangpinxiangqing.html?openid="+config.openid+"&uuid="+config.uuid+"&goodId="+config.goodId+"&unionId="+config.unionId;
 				});
 			}
 		}
