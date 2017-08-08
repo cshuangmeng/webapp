@@ -12,6 +12,45 @@
 		<script type="text/javascript" src="js/common.js"></script>
 		<script type="text/javascript" src="js/goodslist.js"></script>
 		<title>商品列表</title>
+		<style type="text/css">
+			.searchList{
+				padding: 28px 0px;
+			}
+			.searchList .pinpai{
+				height: 40px;
+				line-height: 40px;
+				margin-bottom: 20px;
+			}
+			.searchList .pinpai .tit{
+				width: 10%;
+				float: left;
+				font-size: 16px;
+			}
+			.searchList .pinpai .list{
+				width: 90%;
+				float: right;
+				font-size: 16px;
+				border-bottom: 1px solid #b9b9b9;
+			}
+			.searchList .pinpai .list span{
+				font-size: 15px;
+				color: #2d2d2d;
+				width: 12%;
+				display: block;
+				float: left;
+				cursor: pointer;
+			}
+			.searchList .pinpai .list span.all{
+				font-size: 15px;
+				color: #cf443d;
+			}
+			.searchList .line{
+				border-top: none;
+			}
+			.p-login-main .goodslist{
+				padding-right: 0px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="p-login-main">
@@ -47,7 +86,7 @@
 			</div>
 			<!--goodslist-->
 			<div class="goodslist">
-				<div class="brand">
+				<!--<div class="brand">
 					<div>
 						<div class="left">
 							品牌
@@ -80,8 +119,35 @@
 				<div class="btn">
 					<button class="enture">确定</button>
 					<button class="cancel">取消</button>
+				</div>-->
+				
+				<div class="searchList">
+					<div class="pinpai">
+						<div class="tit">品牌：</div>
+						<div class="list">
+							<span class="all">全部</span>
+							<span>唐僧自营</span>
+							<span>华信药业</span>
+							<span>唐僧自营</span>
+							<span>华信药业</span>
+							<span>唐僧自营</span>
+							<span>华信药业</span>
+						</div>
+					</div>
+					<div class="pinpai">
+						<div class="tit">品类：</div>
+						<div class="list">
+							<span class="all">全部</span>
+							<span>品质生活</span>
+							<span>家庭健康</span>
+						</div>
+					</div>
+					<!--<div class="line"></div>-->
 				</div>
-				<div class="line"></div>
+				
+				
+				
+				
 				<div class="screen">
 					<div class="left">
 						<span class="active">综合</span>
