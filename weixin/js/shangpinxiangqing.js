@@ -79,7 +79,7 @@ $(function(){
 	//去店铺
 	$goshop.click(function(){
 		config.shopId = $(this).attr("shopId");
-		window.location.href="/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+config.shopId;
+		window.location.href="/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+config.shopId+"&unionId="+config.unionId;
 	});
 	
 	//数量加减
