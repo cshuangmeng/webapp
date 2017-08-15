@@ -1,0 +1,237 @@
+.p-ej-main{
+	height: 100%;
+	padding-bottom: 80px;
+}
+.header{
+	padding: 10px 10px 10px 10px;
+}
+.header #activity-name{
+	color: #000;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    word-break: normal;
+    word-wrap: break-word;
+}
+.img{
+	padding: 10px 10px 10px 10px;
+	border-top: 0.5px solid #ddd;
+	padding-top: 15px;
+}
+.img img{
+	display: block;
+	width: 100%;
+}
+.content{
+	padding: 10px;
+}
+.content .con{
+	border: 1px solid rgb(89, 195, 249);
+	padding: 10px;
+}
+.content .con p{
+	white-space: normal;
+	line-height: 2em;
+    color: rgb(62, 62, 62);
+    font-size: 14px;
+}
+.content .con p span{
+	color: rgb(192, 0, 0);
+}
+.content .con p strong{
+	font-size: 18px;
+	color: rgb(225, 0, 0);
+}
+.content .con p img{
+	display: block;
+	width: 100%;
+}
+.imgs{
+	padding: 10px 10px 0px 10px;
+}
+.imgs img{
+	display: block;
+	width: 100%;
+}
+
+.cons{
+	padding: 0px 10px 10px;
+}
+.cons .con .top{
+ 	max-width: 100%;
+    margin: 0px;
+    padding: 5px 15px;
+    color: rgb(160, 160, 162);
+    line-height: 25px;
+    font-weight: bold;
+    text-align: left;
+    border-radius: 5px 5px 0px 0px;
+    border: 0px;
+    background-color: rgb(33, 33, 34);
+ }
+.cons .con .bot{
+	border: 1px solid rgb(33, 33, 34);
+	padding: 10px;
+}
+.cons .con .bot p{
+	white-space: normal;
+    color: rgb(62, 62, 62);
+    font-size: 18px;
+}
+.cons .con .bot p img{
+	display: block;
+	width: 93%;
+	margin: 10px 0px 10px 7%;
+}
+.linkman{
+	border: 5px solid rgb(30, 173, 42);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.s_card_main {
+    border: 2px solid #5a9e2c;
+    margin: 42px 0 0 0;
+    padding-bottom: 10px;
+}
+.s_card_left {
+    float: left;
+    width: 55%;
+    text-align: center;
+}
+.s_card_right {
+    float: right;
+    width: 44%;
+    text-align: center;
+    margin-top: 38px;
+    border-left: 1px dashed #678057;
+}
+.clear {
+    clear: both;
+}
+.s_card_left div {
+    line-height: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.s_card_face {
+    margin-top: -30px;
+}
+.s_card_name {
+    font-size: 20px;
+    margin: 12px 0;
+}
+.s_card_job {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 18px;
+}
+.s_card_info {
+    font-size: 15px;
+    text-align: left;
+    height: 18px;
+    margin: 10px 2px 0 6px;
+}
+.s_card_info {
+    font-size: 15px;
+    text-align: left;
+    height: 18px;
+    margin: 10px 2px 0 6px;
+}
+.s_card_info {
+    font-size: 15px;
+    text-align: left;
+    height: 18px;
+    margin: 10px 2px 0 6px;
+}
+.s_card_tip {
+    font-size: 11px;
+    margin-top: 6px;
+    line-height: 1;
+}
+.s_card_face img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+.s_card_ewm img {
+    width: 94px;
+    height: 94px;
+}
+.conList{
+	margin-top: 15px;
+}
+.conList p{
+    color: rgb(79, 97, 40);
+    font-size: 14px;
+    line-height: 2em;
+}
+.conList p a{
+	color: rgb(79, 97, 40);
+}
+
+.fixedagentcontact {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -1px 2px #b9b9b9;
+    padding: 0 1rem;
+    z-index: 2;
+    padding: 10px;
+}
+.fixedagentcontact .contactlink {
+    padding: .625rem 0;
+    width: 100%;
+    color: #ff6600;
+}
+ .fixedagentcontact .user-info {
+    padding-left: .3125rem;
+    font-size: 12px;
+    line-height: 1.5;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    float: left;
+    color: #ff6600;
+    margin-top: 5px;
+}
+ .fixedagentcontact .user-info a{
+    color: #ff6600;
+ }
+.fixedagentcontact .user-img {
+	float: left;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+.fixedagentcontact .user-img img {
+    display: block;
+    height: 35px;
+    width: 35px;
+    width: auto;
+}
+.fixedagentcontact .contact_opera{
+	float: right;
+}
+.fixedagentcontact .contact_opera a{
+	display: block;
+	float: right;
+	margin-right: 25px;
+}
+.fixedagentcontact .contact_opera a img{
+	display: block;
+	height: 20px;
+	width: 20px;
+	margin-left: 3px;
+}
+.fixedagentcontact .contact_opera a p{
+	font-size: 12px;
+	color: #00ae66;
+}
