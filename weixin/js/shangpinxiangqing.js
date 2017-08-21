@@ -150,7 +150,7 @@ $(function(){
 						}
 					});
 		    	}else if(data.code == 104){
-		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3";
+		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3&unionId="+config.unionId;
 		    	}else{
 		    		$tipContent.text(data.msg);
 					$('#js-tipCon').css('display','block');
@@ -189,7 +189,7 @@ $(function(){
 				        }
 				    });
 		    	}else if(data.code == 104){
-		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3";
+		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3&unionId="+config.unionId;
 		    	}else{
 		    		$tipContent.text(data.msg);
 					$('#js-tipCon').css('display','block');

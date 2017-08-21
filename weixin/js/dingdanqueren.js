@@ -64,7 +64,7 @@ $(function(){
     			}
         		//地址
         		if(data.data.address == null || data.data.address == "" || data.data.address == undefined){
-        				window.location.href="/weixin/addAddress.html?openid="+config.openid+"&uuid="+config.uuid+"&page=0"+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode;
+        				window.location.href="/weixin/addAddress.html?openid="+config.openid+"&uuid="+config.uuid+"&page=0"+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode+"&unionId="+config.unionId;
         			
         		}else{
         			if(data.data.address.consigner){
@@ -281,7 +281,7 @@ $(function(){
 					    }
 					});
 		    	}else if(data.code == 104){
-		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&itemIds="+config.itemIds+"&loginReturn=1";
+		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&itemIds="+config.itemIds+"&loginReturn=1&unionId="+config.unionId;
 		    	}else{
 		    		$tipContent.text(data.msg);
 					showTip();
@@ -312,11 +312,11 @@ $(function(){
 			        	if(data.code == 0){
 			        		if(data.data.order.state != undefined){
 			        			if(data.data.order.state != 0 && data.data.order.state != 4){
-				        			window.location.href="/weixin/paySuccess.html?openid="+config.openid+"&uuid="+config.uuid+"&state=1";
+				        			window.location.href="/weixin/paySuccess.html?openid="+config.openid+"&uuid="+config.uuid+"&state=1&unionId="+config.unionId;
 				        		}
 //			        			state=0表示待付款
 								if(data.data.order.state == 0){
-				        			window.location.href="/weixin/paySuccess.html?openid="+config.openid+"&uuid="+config.uuid+"&state=0";
+				        			window.location.href="/weixin/paySuccess.html?openid="+config.openid+"&uuid="+config.uuid+"&state=0&unionId="+config.unionId;
 				        		}
 			        		}
 			        	}else{

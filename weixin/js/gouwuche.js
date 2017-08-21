@@ -6,7 +6,7 @@ $.ajax({
     async:false,
     success: function(data){
     	if(data.code == 104){
-    		window.location.href = "/weixin/bangdingPhone.html?openid="+configData.openid+"&loginReturn=2";
+    		window.location.href = "/weixin/bangdingPhone.html?openid="+configData.openid+"&loginReturn=2&unionId="+configData.unionId;
     	}
     }
 });

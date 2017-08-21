@@ -34,7 +34,7 @@ $(function(){
 					});
 				}
 	    	}else if(data.code == 104){
-	    		window.location.href = "/weixin/bangdingPhone.html?openid="+configData.openid+"&loginReturn=0";
+	    		window.location.href = "/weixin/bangdingPhone.html?openid="+configData.openid+"&loginReturn=0&unionId="+configData.unionId;
 	    	}
 	    	
 	    }
@@ -42,7 +42,7 @@ $(function(){
 	
 	//交易明细
 	$goJymx.click(function(){
-		window.location.href="/weixin/jiaoyimingxi.html?openid="+configData.openid+"&uuid="+configData.uuid;
+		window.location.href="/weixin/jiaoyimingxi.html?openid="+configData.openid+"&uuid="+configData.uuid+"&unionId="+configData.unionId;
 	});
 	//我的族群
 	$goZuqun.click(function(){
@@ -55,7 +55,7 @@ $(function(){
 			success:function(data){
 				if(data.code == 0){
 					if(data.data){
-						window.location.href="/weixin/wodezuqun.html?openid="+configData.openid+"&uuid="+configData.uuid;
+						window.location.href="/weixin/wodezuqun.html?openid="+configData.openid+"&uuid="+configData.uuid+"&unionId="+configData.unionId;
 					}else{
 						$tipContent.text('购买欢迎大礼包，才能创建族群哦~');
 						showTip();
@@ -66,15 +66,15 @@ $(function(){
 	});
 	//daifukuan
 	$daifukuan.click(function(){
-		window.location.href="/weixin/daifukuan.html?openid="+configData.openid+"&uuid="+configData.uuid;
+		window.location.href="/weixin/daifukuan.html?openid="+configData.openid+"&uuid="+configData.uuid+"&unionId="+configData.unionId;
 	});
 	//daifahuo
 	$daifahuo.click(function(){
-		window.location.href="/weixin/daifahuo.html?openid="+configData.openid+"&uuid="+configData.uuid;
+		window.location.href="/weixin/daifahuo.html?openid="+configData.openid+"&uuid="+configData.uuid+"&unionId="+configData.unionId;
 	});
 	//daishouhuo
 	$daishouhuo.click(function(){
-		window.location.href="/weixin/daishouhuo.html?openid="+configData.openid+"&uuid="+configData.uuid;
+		window.location.href="/weixin/daishouhuo.html?openid="+configData.openid+"&uuid="+configData.uuid+"&unionId="+configData.unionId;
 	});
 	
 })
