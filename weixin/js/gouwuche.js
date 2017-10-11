@@ -6,7 +6,7 @@ $.ajax({
     async:false,
     success: function(data){
     	if(data.code == 104){
-    		window.location.href = "/weixin/bangdingPhone.html?openid="+configData.openid+"&loginReturn=2";
+    		window.location.href = "/weixin/bangdingPhone.html?openid="+configData.openid+"&loginReturn=2&unionId="+configData.unionId;
     	}
     }
 });
@@ -257,9 +257,13 @@ $(function(){
 		        success: function(data){
 		        	if(data.code == 0){
 		        		//isInviteCode
+<<<<<<< HEAD
 					window.location.href="/weixin/dingdanqueren.html?openid="+configData.openid
 					+"&uuid="+configData.uuid+"&unionId="+configData.unionId
 					+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode;
+=======
+		        					window.location.href="/weixin/dingdanqueren.html?openid="+configData.openid+"&uuid="+configData.uuid+"&itemIds="+config.itemIds+"&isInviteCode="+config.isInviteCode+"&unionId="+configData.unionId;
+>>>>>>> branch 'master' of https://github.com/cshuangmeng/webapp.git
 		        	}else{
 		        		$tipContent.text(data.msg);
 						showTip();

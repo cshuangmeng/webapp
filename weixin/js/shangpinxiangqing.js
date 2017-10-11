@@ -79,7 +79,7 @@ $(function(){
 	//去店铺
 	$goshop.click(function(){
 		config.shopId = $(this).attr("shopId");
-		window.location.href="/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+config.shopId;
+		window.location.href="/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+config.shopId+"&unionId="+config.unionId;
 	});
 	
 	//数量加减
@@ -150,7 +150,7 @@ $(function(){
 						}
 					});
 		    	}else if(data.code == 104){
-		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3";
+		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3&unionId="+config.unionId;
 		    	}else{
 		    		$tipContent.text(data.msg);
 					$('#js-tipCon').css('display','block');
@@ -189,7 +189,7 @@ $(function(){
 				        }
 				    });
 		    	}else if(data.code == 104){
-		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3";
+		    		window.location.href = "/weixin/bangdingPhone.html?openid="+config.openid+"&goodId="+config.goodId+"&loginReturn=3&unionId="+config.unionId;
 		    	}else{
 		    		$tipContent.text(data.msg);
 					$('#js-tipCon').css('display','block');

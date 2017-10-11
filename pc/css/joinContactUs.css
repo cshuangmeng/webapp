@@ -78,7 +78,11 @@
 	border-radius: 5px;
 	margin-top: 14px;
 	background: #fff;
+	color: #333;
 }
+.joinUs .joinUs_con input::-moz-placeholder { color: #333; }
+.joinUs .joinUs_con input:-ms-input-placeholder { color: #333; }
+.joinUs .joinUs_con input::-webkit-input-placeholder { color: #333; }
 .joinUs .joinUs_con .joinUs_con_txt{
 	width: 341px;
 	height: 104px;

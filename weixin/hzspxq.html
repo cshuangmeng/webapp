@@ -35,6 +35,7 @@
 			//获取url携带的参数
 			config.openid = undefined != configData.openid ? configData.openid : getUrlParam('openid');
 			config.uuid = undefined != configData.uuid ? configData.uuid : getUrlParam('uuid');
+			config.unionId = undefined != configData.unionId ? configData.unionId : getUrlParam('unionId');
 			//合作商户详情
 			$.ajax({
 			    type: "POST",
@@ -48,7 +49,7 @@
 			    		$con.text(data.data.introduction);
 			    		$shop.text(data.data.name);
 			    		$shop.click(function(){
-			    			window.location.href = "/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+data.data.id;
+			    			window.location.href = "/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+data.data.id+"&unionId="+config.unionId;
 			    		});
 			    	}
 			    }

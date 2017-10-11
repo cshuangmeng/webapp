@@ -14,6 +14,7 @@ $(function(){
 	share('3','','','');
 	//获取url携带的参数
 	config.openid = undefined != configData.openid ? configData.openid : getUrlParam('openid');
+	config.unionId = undefined != configData.unionId ? configData.unionId : getUrlParam('unionId');
 	config.loginReturn = getUrlParam('loginReturn');
 	//下发验证码倒计时
 	function time() {//o为按钮的对象，p为可选，这里是60秒过后，提示文字的改变 
@@ -102,7 +103,7 @@ $(function(){
 								}
 								if(config.loginReturn == 1){
 									config.goodIds = getUrlParam('itemIds');
-									window.location.href="/weixin/dingdanqueren.html?openid="+config.openid+"&uuid="+config.uuid+"&itemIds="+config.goodIds;
+									window.location.href="/weixin/dingdanqueren.html?openid="+config.openid+"&uuid="+config.uuid+"&itemIds="+config.goodIds+"&unionId="+config.unionId;
 								}
 								if(config.loginReturn == 2){
 									window.location.href="https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx1be0f2a1f512729a&redirect_uri=http%3A%2F%2Fwww.tangseng.shop%2Fweixin%2Fgouwuche.html&response_type=code&scope=snsapi_base&state=STATE#wechat_redirect";
@@ -110,11 +111,11 @@ $(function(){
 								if(config.loginReturn == 3){
 									config.goodId = getUrlParam('goodId');
 									config.isInviteCode = getUrlParam('isInviteCode');
-									window.location.href="/weixin/shangpinxiangqing.html?openid="+config.openid+"&uuid="+config.uuid+"&goodId="+config.goodId+"&isInviteCode="+config.isInviteCode;
+									window.location.href="/weixin/shangpinxiangqing.html?openid="+config.openid+"&uuid="+config.uuid+"&goodId="+config.goodId+"&isInviteCode="+config.isInviteCode+"&unionId="+config.unionId;
 								}
 								if(config.loginReturn == 4){
 									config.shopId = getUrlParam('shopId');
-									window.location.href="/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+config.shopId;
+									window.location.href="/weixin/dianpu.html?openid="+config.openid+"&uuid="+config.uuid+"&shopId="+config.shopId+"&unionId="+config.unionId;
 								}
 							}
 						}else{
